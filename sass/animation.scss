@@ -1,0 +1,72 @@
+//animation
+@import "base/variables";
+@import "base/mixin";
+@import "animation/animate";
+
+
+.mydiv {
+  font-size: 30px;
+
+  @include bounceInDown(
+      $duration: 1s,
+      $count: 1,
+      $delay: .2s,
+      $function: ease,
+      $fill: both
+    );
+}
+
+
+// .mydiv1 {
+//   position:relative;
+//   animation:mymove 5s infinite;
+//   animation-delay:2s;
+//   -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+//   -webkit-animation-delay:2s;
+//   animation-timing-function:linear;
+// }
+
+// @for $i from 1 through 8 {
+//
+//   .mydiv#{$i} {
+//
+//     position: relative;
+//     animation: mymove 5s infinite;
+//     animation-delay: 1s*$i;
+//     -webkit-animation: mymove#{$i} 3s infinite; /*Safari and Chrome*/
+//     -webkit-animation-delay: 1s*$i;
+//     animation-timing-function: linear;
+//   }
+//   @include keyframes(mymove#{$i}) {
+//
+//     0% {
+//       // opacity:0;
+//       left:0px;
+//     }
+//     80% {
+//       // opacity:1;
+//       left:200px;
+//     }
+//   }
+//
+//
+// }
+
+@for $i from 1 through 8 {
+
+  .mydiv#{$i} {
+
+    @include bounceInDown(
+        $duration: 1s,
+        $count: 1,
+        $delay: .2s,
+        $function: ease,
+        $fill: both
+      );
+
+
+  }
+
+
+
+}
