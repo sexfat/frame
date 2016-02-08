@@ -1,87 +1,59 @@
-*,
-*:after,
-*:before {
-  box-sizing: border-box; }
+/*
+Error: File to import not found or unreadable: compass.
+        on line 88 of sass/base/_mixin.scss
+        from line 2 of sass/main.scss
 
-.row {
-  max-width: 1280px;
-  max-width: 80rem;
-  margin: 0 auto; }
-  .row {
-    *zoom: 1; }
-  .row:before, .row:after {
-    content: "";
-    display: table; }
-  .row:after {
-    clear: both; }
-
-.col {
-  margin-left: 1.6%; }
-
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
-  float: left; }
-
-.col_1 {
-  width: 8.33333%; }
-
-.col_2 {
-  width: 16.66667%; }
-
-.col_3 {
-  width: 25%; }
-
-.col_4 {
-  width: 33.33333%; }
-
-.col_5 {
-  width: 41.66667%; }
-
-.col_6 {
-  width: 50%; }
-
-.col_7 {
-  width: 58.33333%; }
-
-.col_8 {
-  width: 66.66667%; }
-
-.col_9 {
-  width: 75%; }
-
-.col_10 {
-  width: 83.33333%; }
-
-.col_11 {
-  width: 91.66667%; }
-
-.col_12 {
-  width: 100%; }
-
-.col:first-child,
-.col_12 {
-  margin-left: 0; }
-
-.test {
-  height: 100px;
-  width: 200px;
-  background: #6699FF;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6699FF), color-stop(100%, #99CCFF));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #6699FF 0%, #99CCFF 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6699FF', endColorstr='#99CCFF', GradientType=0 );
-  /* IE6-9 */
-  margin: 10px;
-  margin: 0.625rem;
-  border-radius: 50px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+sass/base/_mixin.scss:88
+sass/main.scss:2
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:410:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A         on line 88 of sass/base/_mixin.scss\A         from line 2 of sass/main.scss"; }
