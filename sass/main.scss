@@ -3,8 +3,8 @@
 @import "layout/grid";
 @import "layout/rwd";
 //compass
-@import "compass/css3";
-@import "compass/utilities";
+// @import "compass/css3";
+// @import "compass/utilities";
 
 
 .test{
@@ -14,13 +14,13 @@ width: 200px;
 // background-color: #99CCFF;
 @include linearGradient(#6699FF, #99CCFF);
 @include rem("margin", 10);
-@include roundedCorners(50);
+@include roundedCorners(10);
 }
 
 
-.simple {
-  @include border-radius(4px, 4px);
-  height: 300px;
-  width: 300px;
-  background-color: #58d21f;
-}
+// .simple {
+//   @include border-radius(4px, 4px);
+//   height: 300px;
+//   width: 300px;
+//   background-color: #58d21f;
+// }
