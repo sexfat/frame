@@ -1,0 +1,26 @@
+{
+  "name": "frame",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "黃漢庭"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frame"
+  ],
+  "homepage": "https://github.com/sexfat/frame",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "spine": "^1.6.1"
+  }
+}

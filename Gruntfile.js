@@ -5,14 +5,14 @@ module.exports = function (grunt) {
             tasks: ['sass']
         },
 
-        compass: {
-    			dist: {
-    				options: {
-    					src: 'sass/main.scss',
-    					dest: 'views/css/main.css'
-    				}
-    			}
-    		},
+        // compass: {
+    		// 	dist: {
+    		// 		options: {
+    		// 			src: 'sass/main.scss',
+    		// 			dest: 'views/css/main.css'
+    		// 		}
+    		// 	}
+    		// },
         sass: {
             dev: {
                 files: {
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
     });
 
     // load npm tasks
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    // grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
