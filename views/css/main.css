@@ -84,4 +84,14 @@
   margin: 0.625rem;
   border-radius: 10px; }
 
+@media only screen and (min-width: 1301px) {
+  .rwd_1900 {
+    color: #c64220; } }
+@media only screen and (min-width: 720px) and (max-width: 1300px) {
+  .rwd_720 {
+    color: #a40ab9; } }
+@media only screen and (max-width: 719px) {
+  .rwd_360 {
+    color: #08b81a; } }
+
 /*# sourceMappingURL=main.css.map */
