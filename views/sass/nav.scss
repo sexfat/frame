@@ -29,3 +29,28 @@ h1.logo {
     display: inline-block;
     padding: 1em 0.5em 0;
 }
+//
+.menubars {
+    width: 24px;
+    height: 4px;
+    margin: 10px 0;
+    background: #fff;
+    position: relative;
+    z-index: 999!important;
+    @include animation('all 0.3s ease-in-out');
+
+ &:before {
+    top:-8px;
+ }
+ &:after {
+    top:8px;
+ }
+ &:before , &:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #FFF;
+  position: absolute;
+ }
+}
