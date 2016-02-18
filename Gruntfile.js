@@ -5,11 +5,11 @@ module.exports = function (grunt) {
             tasks: ['sass']
         },
 
+
         sass: {
             build: {
                 options: {
-                    compress: false,
-                    sourceMap: 'none'
+                    sourcemap: 'none'
                      },
             files: [{
                      expand: true,
