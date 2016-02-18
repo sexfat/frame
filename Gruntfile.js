@@ -17,7 +17,9 @@ module.exports = function (grunt) {
             dev: {
                 files: {
                     'views/css/main.css': 'sass/main.scss',
-                    'views/css/animation.css': 'sass/animation.scss'
+                    'views/css/animation.css': 'sass/animation.scss',
+                    'views/css/weather.css': 'sass/weather.scss'
+
                 }
             }
         },
