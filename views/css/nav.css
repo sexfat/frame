@@ -82,6 +82,9 @@ h1.logo {
   display: inline-block;
   padding: 1em 0.5em 0; }
 
+.nav_backgroung {
+  display: none; }
+
 .menubars {
   width: 24px;
   height: 4px;
@@ -89,11 +92,10 @@ h1.logo {
   background: #fff;
   position: relative;
   z-index: 999 !important;
-  -webkit-animation: all 0.3s ease-in-out;
-  -moz-animation: all 0.3s ease-in-out;
-  -ms-animation: all 0.3s ease-in-out;
-  -o-animation: all 0.3s ease-in-out;
-  animation: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  -o-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s; }
   .menubars:before {
     top: -8px; }
   .menubars:after {
@@ -104,4 +106,22 @@ h1.logo {
     width: 24px;
     height: 4px;
     background: #FFF;
-    position: absolute; }
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s; }
+
+.js-open .menubars {
+  background: none !important; }
+.js-open .menubars:before {
+  top: 0px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+.js-open .menubars:after {
+  top: 0px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }

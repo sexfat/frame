@@ -1,0 +1,48 @@
+// @import "base/variables";
+// @import "base/mixin";
+// //
+// @mixin hamburger ($class,$width){
+// $class {
+//     width: $width;
+//     height: 4px;
+//     margin: 10px 0;
+//     background: #fff;
+//     position: relative;
+//     z-index: 999!important;
+//     @include single-transition(all, 0.2s, ease-in-out ,0.1s);
+//
+//
+//  &:before {
+//     top: -8px;
+//  }
+//  &:after {
+//     top: 8px;
+//  }
+//  &:before , &:after {
+//   content: '';
+//   display: block;
+//   width: 24px;
+//   height: 4px;
+//   background: #FFF;
+//   position: absolute;
+//   z-index: -1;
+//   @include single-transition(all, 0.2s, ease-in-out ,0.1s);
+//  }
+// }
+//
+// .js-open{
+//
+//   $class{
+//   background: none!important;
+//   }
+//  $class:before {
+//    top: 0px;
+//    @include single-transform(-45);
+//   }
+//   $class:after {
+//     top: 0px;
+//     @include single-transform(45);
+//
+//   }
+//
+// }

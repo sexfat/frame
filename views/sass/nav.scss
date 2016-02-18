@@ -4,6 +4,9 @@
 @import "layout/grid";
 @import "layout/rwd";
 
+// @import "modules/hamburger_menu";
+
+
 body {
 
     font-family: "Helvetica Neue" ,Helvetica,arial,sans-serif;
@@ -29,6 +32,13 @@ h1.logo {
     display: inline-block;
     padding: 1em 0.5em 0;
 }
+.nav_backgroung {
+    display: none;
+}
+
+
+
+
 //
 .menubars {
     width: 24px;
@@ -37,13 +47,14 @@ h1.logo {
     background: #fff;
     position: relative;
     z-index: 999!important;
-    @include animation('all 0.3s ease-in-out');
+    @include single-transition(all, 0.2s, ease-in-out ,0.1s);
+
 
  &:before {
-    top:-8px;
+    top: -8px;
  }
  &:after {
-    top:8px;
+    top: 8px;
  }
  &:before , &:after {
   content: '';
@@ -52,5 +63,34 @@ h1.logo {
   height: 4px;
   background: #FFF;
   position: absolute;
+  z-index: -1;
+  @include single-transition(all, 0.2s, ease-in-out ,0.1s);
  }
+}
+
+.js-open{
+
+  .menubars {
+  background: none!important;
+  }
+ .menubars:before {
+   top: 0px;
+   @include single-transform(-45);
+  }
+  .menubars:after {
+    top: 0px;
+    @include single-transform(45);
+
+  }
+
+//
+
+
+
+
+
+
+
+
+
 }
