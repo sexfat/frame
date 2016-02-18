@@ -1,7 +1,12 @@
+//base
 @import "base/variables";
 @import "base/mixin";
 @import "layout/grid";
 @import "layout/rwd";
+
+
+//test
+@import "test/test_rwd";
 
 
 .test {
@@ -31,6 +36,3 @@
   color: rgb(8, 184, 26)
   }
 }
-
-// .rwd_720
-// .rwd_360
