@@ -5,13 +5,26 @@ module.exports = function (grunt) {
             tasks: ['sass']
         },
         sass: {
+            options: {
+                sourceMap: 'none'
+                   },
+
             dev: {
                 files: {
                     'views/css/main.css': 'views/sass/main.scss',
-                    'views/css/animation.css': 'views/sass/animation.scss'
+                    'views/css/animation.css': 'views/sass/animation.scss',
+                    'views/css/nav.css': 'views/sass/nav.scss'
                 }
             }
         },
+
+
+
+
+
+
+
+
         browserSync: {
             dev: {
                 bsFiles: {
