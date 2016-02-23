@@ -1,0 +1,21 @@
+{
+  "name": "frame",
+  "description": "make framework",
+  "main": "index.js",
+  "authors": [
+    "bryan <bryant6831@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frame"
+  ],
+  "homepage": "https://github.com/sexfat/frame",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

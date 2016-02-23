@@ -81,3 +81,47 @@ h1.logo {
   position: absolute;
   display: inline-block;
   padding: 1em 0.5em 0; }
+
+.nav_backgroung {
+  display: none; }
+
+.menubars {
+  width: 24px;
+  height: 4px;
+  margin: 10px 0;
+  background: #fff;
+  position: relative;
+  z-index: 999 !important;
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  -o-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s; }
+  .menubars:before {
+    top: -8px; }
+  .menubars:after {
+    top: 8px; }
+  .menubars:before, .menubars:after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 4px;
+    background: #FFF;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    transition: all 0.2s ease-in-out 0.1s; }
+
+.js-open .menubars {
+  background: none !important; }
+.js-open .menubars:before {
+  top: 0px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+.js-open .menubars:after {
+  top: 0px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
