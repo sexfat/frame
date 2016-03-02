@@ -1,16 +1,22 @@
 {
   "name": "frame",
-  "description": "make framework",
+  "description": "no",
   "main": "index.js",
   "authors": [
     "bryan <bryant6831@gmail.com>"
   ],
   "license": "ISC",
   "keywords": [
-    "frame"
+    "no"
   ],
   "homepage": "https://github.com/sexfat/frame",
-  "moduleType": [],
+  "moduleType": [
+    "globals"
+  ],
+
+  "dependencies": {
+        "jquery": "1.8.3"
+    },
   "ignore": [
     "**/.*",
     "node_modules",
