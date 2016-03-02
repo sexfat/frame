@@ -11,7 +11,7 @@
 2. build  bower.json
 <code>bower init<code>
 
-3. build .bowerrc file local base path
+3. build <code> .bowerrc </code> file local base path
 
 <pre><code>
 {
