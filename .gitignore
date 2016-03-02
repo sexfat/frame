@@ -3,4 +3,4 @@ node_modules
 ._.DS_Store
 .sass-cache/
 bower_components
-views/js/libs
+views/libs
