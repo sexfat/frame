@@ -1,7 +1,7 @@
 # frame
 ## theme
 ##plugins
-#everybody
+##everybody
 
 
 ## bower  install
