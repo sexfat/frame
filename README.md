@@ -1,2 +1,4 @@
 # frame
-#everybody
+## theme
+
+##plugins
