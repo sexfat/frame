@@ -12,9 +12,10 @@
 <code>bower init<code>
 
 3. build .bowerrc file local base path
+
 <pre><code>
 {
-  "directory" : "views/libs"
   //套件會建在這資料夾裡
+  "directory" : "views/libs"
 }
 </code></pre>
