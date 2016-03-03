@@ -4,33 +4,21 @@
 @import "layout/grid";
 @import "layout/rwd";
 
-
-
-
-.test {
-
-    height: 300px;
-    width: 200px;
-    // background-color: #99CCFF;
-    @include linearGradient(#6699FF, #99CCFF);
-    @include rem("margin", 10);
-    @include roundedCorners(10);
-}
-
+//
 @include minbreakpoint(1301) {
   .rwd_1900 {
   color: rgb(198, 66, 32);
   font-size: 25px
   }
 }
-
+//
 @include breakpoint(720 , 1300) {
   .rwd_720{
   color: rgb(164, 10, 185);
   font-size: 50px
   }
 }
-
+//
 @include maxbreakpoint(719) {
   .rwd_360{
   color: rgb(8, 184, 26);
