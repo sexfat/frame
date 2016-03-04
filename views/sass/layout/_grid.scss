@@ -6,6 +6,9 @@
 
  // .col_1 { width: 8.33333%;  }
  // .col_12 { width: 100%; }
+@import "../layout/rwd";
+
+
 *,
 *:after,
 *:before {
@@ -17,6 +20,11 @@
 	margin:0 auto;
 }
 
+
+
+
+
+//commom
 .col{
   margin-left: 1.6%;
 }
@@ -34,12 +42,30 @@
   }
 
 }
-
 .col:first-child,
 .col_12 {
   margin-left: 0;
 }
-.xsmall-12 {
- width: 100%;
-margin: 0 auto;
+
+
+
+//mobile grid
+
+@include respond-to(small) {
+
+  %xsmall {
+    float: left;
+  }
+
+  @for $i from 1 through $grid-columns {
+
+    .xsmall_#{$i} {
+      @extend %xsmall;
+      width: ($i / $grid-columns) * 100%;
+    }
+    .xsmall:first-child,
+    .xsmall_12 {
+      margin-left: 0;
+    }
+  }
 }
