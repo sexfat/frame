@@ -1,68 +1,110 @@
-/*
-Error: Undefined mixin 'linearGradient'.
-        on line 14 of views/sass/main.scss, in `linearGradient'
-        from line 14 of views/sass/main.scss
-
-9: .test {
-10: 
-11:     height: 200px;
-12:     width: 200px;
-13:     // background-color: #99CCFF;
-14:     @include linearGradient(#6633FF, #99CCFF);
-15:     @include rem("margin", 40);
-16:     @include roundedCorners(30);
-17: }
-18: 
-19: @include minbreakpoint(1300) {
-
-Backtrace:
-views/sass/main.scss:14:in `linearGradient'
-views/sass/main.scss:14
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:278:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:423:in `run'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
 body:before {
   white-space: pre;
   font-family: monospace;
   content: "Error: Undefined mixin 'linearGradient'.\A         on line 14 of views/sass/main.scss, in `linearGradient'\A         from line 14 of views/sass/main.scss\A \A 9: .test {\A 10: \A 11:     height: 200px;\A 12:     width: 200px;\A 13:     // background-color: #99CCFF;\A 14:     @include linearGradient(#6633FF, #99CCFF);\A 15:     @include rem(\"margin\", 40);\A 16:     @include roundedCorners(30);\A 17: }\A 18: \A 19: @include minbreakpoint(1300) {"; }
+=======
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin: 0 auto; }
+  .row {
+    *zoom: 1; }
+  .row:before, .row:after {
+    content: "";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.col {
+  margin-left: 1.6%; }
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  float: left; }
+
+.col_1 {
+  width: 8.33333%; }
+
+.col_2 {
+  width: 16.66667%; }
+
+.col_3 {
+  width: 25%; }
+
+.col_4 {
+  width: 33.33333%; }
+
+.col_5 {
+  width: 41.66667%; }
+
+.col_6 {
+  width: 50%; }
+
+.col_7 {
+  width: 58.33333%; }
+
+.col_8 {
+  width: 66.66667%; }
+
+.col_9 {
+  width: 75%; }
+
+.col_10 {
+  width: 83.33333%; }
+
+.col_11 {
+  width: 91.66667%; }
+
+.col_12 {
+  width: 100%; }
+
+.col:first-child,
+.col_12 {
+  margin-left: 0; }
+
+.xsmall-12 {
+  width: 100%;
+  margin: 0 auto; }
+
+.test {
+  height: 300px;
+  width: 200px;
+  background: #6699FF;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6699FF), color-stop(100%, #99CCFF));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #6699FF 0%, #99CCFF 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #6699FF 0%, #99CCFF 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6699FF', endColorstr='#99CCFF', GradientType=0 );
+  /* IE6-9 */
+  margin: 10px;
+  margin: 0.625rem;
+  border-radius: 10px; }
+
+@media only screen and (min-width: 1301px) {
+  .rwd_1900 {
+    color: #c64220;
+    font-size: 25px; } }
+@media only screen and (min-width: 720px) and (max-width: 1300px) {
+  .rwd_720 {
+    color: #a40ab9;
+    font-size: 50px; } }
+@media only screen and (max-width: 719px) {
+  .rwd_360 {
+    color: #08b81a;
+    font-size: 100px; } }
+>>>>>>> eb8ddae3cecdc8841ec7a293885e909a6539dfe6
