@@ -1,8 +1,5 @@
 //base
-@import "base/variables";
-@import "base/mixin";
-@import "layout/grid";
-@import "layout/rwd";
+
 
 
 //test
@@ -11,22 +8,24 @@
 
 .test {
 
-    height: 300px;
+    height: 200px;
     width: 200px;
     // background-color: #99CCFF;
-    @include linearGradient(#6699FF, #99CCFF);
-    @include rem("margin", 10);
-    @include roundedCorners(10);
+    @include linearGradient(#6633FF, #99CCFF);
+    @include rem("margin", 40);
+    @include roundedCorners(30);
 }
 
-@include minbreakpoint(1301) {
+@include minbreakpoint(1300) {
+
   .rwd_1900 {
   color: rgb(198, 66, 32);
   font-size: 25px
   }
 }
 
-@include breakpoint(720 , 1300) {
+
+@include breakpoint(720 , 1299) {
   .rwd_720{
   color: rgb(164, 10, 185);
   font-size: 50px
