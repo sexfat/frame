@@ -1,40 +1,62 @@
-
 //base
 @import "base/variables";
 @import "base/mixin";
 @import "layout/grid";
 @import "layout/rwd";
+.wrapper {
+  .floating_icon {
+    border-radius: 50px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background: #f5f5f5;
+    @include box-shadow(2px, 1px, 0px, 0px, #d5d5d5);
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+  .floating_icon:hover {
+    background: #0cc1da;
+    // -webkit-transform: scale(1.2);
+    // -ms-transform: scale(1.2);
+    // transform: scale(1.2);
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+     @include transform("scale", 1);
 
-.test {
-
-    height: 200px;
-    width: 200px;
-    // background-color: #99CCFF;
-    @include linearGradient(#6633FF, #99CCFF);
-    @include rem("margin", 40);
-    @include roundedCorners(30);
-}
-
-@include minbreakpoint(1300) {
-
-  .rwd_1900 {
-  color: rgb(198, 66, 32);
-  font-size: 25px
+    //  @include single-transition(background, 1s, ease-in-out, 0);
   }
 }
-
-
-@include breakpoint(720 , 1299) {
-  .rwd_720{
-  color: rgb(164, 10, 185);
-  font-size: 50px
-  }
-}
-
-@include maxbreakpoint(719) {
-  .rwd_360{
-  color: rgb(8, 184, 26);
-  font-size: 100px;
-
-  }
-}
+// .test {
+//
+//     height: 200px;
+//     width: 200px;
+//     // background-color: #99CCFF;
+//     @include linearGradient(#6633FF, #99CCFF);
+//     @include rem("margin", 40);
+//     @include roundedCorners(30);
+// }
+//
+// @include minbreakpoint(1300) {
+//
+//   .rwd_1900 {
+//   color: rgb(198, 66, 32);
+//   font-size: 25px
+//   }
+// }
+//
+//
+// @include breakpoint(720 , 1299) {
+//   .rwd_720{
+//   color: rgb(164, 10, 185);
+//   font-size: 50px
+//   }
+// }
+//
+// @include maxbreakpoint(719) {
+//   .rwd_360{
+//   color: rgb(8, 184, 26);
+//   font-size: 100px;
+//
+//   }
+// }

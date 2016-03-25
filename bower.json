@@ -3,27 +3,21 @@
   "description": "no",
   "main": "index.js",
   "authors": [
-    "bryan <bryant6831@gmail.com>"
+    "bryan"
   ],
   "license": "ISC",
   "keywords": [
-    "no"
+    "text"
   ],
-  "homepage": "https://github.com/sexfat/frame",
-  "moduleType": [
-    "globals"
-  ],
-  
-  "dependencies": {
-        "jquery": "1.8.3",
-        "bootstrap-sass": "3.2.0",
-        "bootstrap": "3.3.1"
-    },
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "views/libs",
     "test",
     "tests"
-  ],
+  ]
 }
