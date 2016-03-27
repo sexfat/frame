@@ -17,12 +17,12 @@
     @if $type == "rotate" or $type == "rotateY" or $type == "rotateX" {
       $originVal: append($originVal, $itemVal + deg);
     } @else {
-      $originVal: append($originVal, $itemVal + px);
+      $originVal: append($originVal, $itemVal );
     }
 
     $i: $i + 1;
   }
-  -webkit-transform: #{$type}($originVal);
-     -moz-transform: #{$type}($originVal);
-          transform: #{$type}($originVal);
+  -webkit-transform: #{$type} ($originVal);
+     -moz-transform: #{$type} ($originVal);
+          transform: #{$type} ($originVal);
 }
