@@ -16,15 +16,11 @@
   }
   .floating_icon:hover {
     background: #0cc1da;
-    // -webkit-transform: scale(1.2);
-    // -ms-transform: scale(1.2);
-    // transform: scale(1.2);
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
-     @include transform("scale", 1);
 
-    //  @include single-transition(background, 1s, ease-in-out, 0);
+    // -webkit-transition: all 0.35s;
+    // -moz-transition: all 0.35s;
+    // transition: all 0.35s;
+    @include scale(1.2);
   }
 }
 // .test {
