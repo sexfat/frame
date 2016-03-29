@@ -16,7 +16,7 @@
   }
   .floating_icon:hover {
     background: #0cc1da;
-
+    @include single-transition( all, .35s, ease-in-out, 0s );
     // -webkit-transition: all 0.35s;
     // -moz-transition: all 0.35s;
     // transition: all 0.35s;

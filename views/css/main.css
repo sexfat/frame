@@ -452,6 +452,10 @@
   cursor: pointer; }
 .wrapper .floating_icon:hover {
   background: #0cc1da;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  -moz-transition: all 0.35s ease-in-out 0s;
+  -o-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);

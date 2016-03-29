@@ -5,6 +5,9 @@
 // ----------------------------------------------------------------------
 
 // example: @include single-transition(background, 1s, ease-in-out, 0);
+// @include single-transition(transition-property , transition-duration , transition-timing-function );
+// tranistion-property : transition-property ： none | all | [ <IDENT> ] [ ',' <IDENT> ]*
+// transition-duration :
 
 @mixin single-transition($property, $duration, $timing-function,$delay) {
   -webkit-transition: $property $duration $timing-function $delay;
