@@ -30,3 +30,12 @@
 
 .col_4 {
   width: 100%; }
+
+.cols_1 {
+  width: 25%; }
+
+.cols_2 {
+  width: 50%; }
+
+.cols_3 {
+  width: 75%; }

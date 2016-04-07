@@ -41,9 +41,16 @@
 .text_04 {
   @include txt(heavy);
 }
-//for grid
+//for grid $i from through number
 @for $i from 1 through 4 {
   .col_#{$i} {
+    width: (100%/4*$i);
+  }
+}
+
+//for   $i from to number
+@for $i from 1 to 4 {
+  .cols_#{$i} {
     width: (100%/4*$i);
   }
 }
