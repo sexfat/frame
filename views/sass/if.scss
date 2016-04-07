@@ -1,0 +1,26 @@
+//if()
+@mixin test($condition) {
+  $color: if($condition, blue , red);
+  color: $color;
+}
+.addClass {
+  @include test(true);
+};
+.removeClass {
+  @include test(false);
+}
+
+//@if
+@mixin txt($weight) {
+  color: white;
+  @if $weight == bold {
+    font-weight: bold;
+  }
+}
+.text_01 {
+  @include txt(none);
+}
+
+.text_02 {
+  @include txt(bold);
+}

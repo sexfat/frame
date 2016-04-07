@@ -1,0 +1,12 @@
+.addClass {
+  color: blue; }
+
+.removeClass {
+  color: red; }
+
+.text_01 {
+  color: white; }
+
+.text_02 {
+  color: white;
+  font-weight: bold; }
