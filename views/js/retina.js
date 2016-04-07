@@ -17,9 +17,9 @@ $(function() {
     }
   }
 
-  for (var i = 0; i < 5; i++) {
-    console.log(i);
-    // more statements
-  }
+  // for (var i = 0; i < 9; i++) {
+  //   console.log(i);
+  //   // more statements
+  // }
 
 });
