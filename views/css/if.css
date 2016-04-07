@@ -10,3 +10,23 @@
 .text_02 {
   color: white;
   font-weight: bold; }
+
+.text_03 {
+  color: white;
+  font-weight: 100; }
+
+.text_04 {
+  color: white;
+  font-weight: 900; }
+
+.col_1 {
+  width: 25%; }
+
+.col_2 {
+  width: 50%; }
+
+.col_3 {
+  width: 75%; }
+
+.col_4 {
+  width: 100%; }
