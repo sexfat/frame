@@ -1,4 +1,86 @@
-//if()
+//variables
+$padding: 100px;
+.nav {
+  padding-left: $padding;
+}
+//nesting
+body {
+  .nav {
+    padding-left: $padding;
+    li {
+      text-align: center;
+    }
+    &.av {
+      text-align: left;
+    }
+  }
+}
+//-------------------------
+//    Partials Import
+//-------------------------
+// @import "main" ;
+
+//-------------------------
+//      Mixins
+//-------------------------
+@mixin margin {
+  margin: 200px;
+}
+p {
+  @include margin;
+}
+@mixin margin ($dis) {
+  margin: $dis $dis $dis $dis/2;
+}
+p {
+  @include margin (500px);
+}
+@mixin systems ($s1 ,$s2) {
+  padding: $s1;
+  margin: $s2;
+}
+p {
+  @include systems (100px , 200px );
+}
+
+
+$value: 500px;
+@mixin systems ($s1 ,$s2:$value) {
+  padding: $s1;
+  margin: $s2;
+}
+.systems {
+  @include systems (100px ,$value);
+}
+
+
+//-------------------------
+//       Extend
+//-------------------------
+
+.extend {
+color:rgb(255, 77, 0)
+}
+
+h1 {
+  font-size: 100px;
+  @extend .extend ;
+}
+h2 {
+  font-size: 80px;
+  @extend .extend ;
+}
+
+
+//-------------------------
+//       Operators
+//-------------------------
+
+
+
+//-------------------------
+//        if()
+//------------------------3-
 @mixin test($condition) {
   $color: if($condition, blue , red);
   color: $color;

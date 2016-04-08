@@ -1,3 +1,36 @@
+.nav {
+  padding-left: 100px; }
+
+body .nav {
+  padding-left: 100px; }
+  body .nav li {
+    text-align: center; }
+  body .nav.av {
+    text-align: left; }
+
+p {
+  margin: 200px; }
+
+p {
+  margin: 500px 500px 500px 250px; }
+
+p {
+  padding: 100px;
+  margin: 200px; }
+
+.systems {
+  padding: 100px;
+  margin: 500px; }
+
+.extend, h1, h2 {
+  color: #ff4d00; }
+
+h1 {
+  font-size: 100px; }
+
+h2 {
+  font-size: 80px; }
+
 .addClass {
   color: blue; }
 
