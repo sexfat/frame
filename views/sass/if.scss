@@ -47,10 +47,42 @@
     width: (100%/4*$i);
   }
 }
-
 //for   $i from to number
 @for $i from 1 to 4 {
   .cols_#{$i} {
     width: (100%/4*$i);
+  }
+}
+// + - * %
+h2 {
+  width: 3px * 5 + 2px;
+  width: 3 * (5px + 4px);
+}
+// original value
+$base-size: 16px;
+$line-height: 24px;
+h1 {
+  font-size: #{$base-size} / #{$line-height};
+}
+h2 {
+  font-size: ($base-size / $line-height) + em;
+}
+// ==  !=
+@mixin you($weight) {
+   @if $weight != light{
+    font-weight: bold;
+  }
+}
+span {
+  @include you(light);
+}
+// 小於
+$padding: 10px;
+h2 {
+  @if $padding<=20px {
+    padding: $padding;
+  }
+  @else {
+    padding: $padding/2;
   }
 }
