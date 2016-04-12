@@ -8,6 +8,15 @@
 // @include single-transition(transition-property , transition-duration , transition-timing-function );
 // tranistion-property : transition-property ： none | all | [ <IDENT> ] [ ',' <IDENT> ]*
 // transition-duration :
+//@include transition(all,0.2s);
+
+@mixin transition($property_style, $duration_time) {
+  -webkit-transition: $property_style $duration_time;
+     -moz-transition: $property_style $duration_time;
+       -o-transition: $property_style $duration_time;
+          transition: $property_style $duration_time;
+}
+
 
 @mixin single-transition($property, $duration, $timing-function,$delay) {
   -webkit-transition: $property $duration $timing-function $delay;

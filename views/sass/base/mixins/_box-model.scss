@@ -3,6 +3,7 @@
   // Box Model
 
 // ----------------------------------------------------------------------
+// example: @include box-sizing(inherit);
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model;

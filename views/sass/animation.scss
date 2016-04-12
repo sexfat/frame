@@ -1,22 +1,59 @@
-//animation
+// animation
 @import "base/variables";
 @import "base/mixin";
+@import "layout/grid";
 @import "animation/animate";
 
+a , a:hover {
+ text-decoration: none;
+}
 
-.mydiv {
-  font-size: 30px;
-
-  @include bounceInDown(
-      $duration: 1s,
-      $count: 1,
-      $delay: .2s,
-      $function: ease,
-      $fill: both
-    );
+// download animation
+.download-area {
+  .button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.5em 2.5em;
+    background: 0;
+    color: #d02682;
+    border: 1px solid rgba(#d02682, 0.99);
+    border-radius: 3px;
+    @include transition(all , 0.2s);
+  }
+  .button i {
+    @include transition(all , 0.3s);
+    opacity: 0;
+    margin-left: -1.4em;
+  }
+  .button:hover {
+    padding: 0.5em 1.8em 0.5em 2.3em;
+    border: 1px solid transparent;
+    background: rgba(212, 41, 67, 0.64);
+    color: #fff;
+  }
+  .button:hover i {
+    opacity: 1;
+    margin-left: 0.6em;
+  }
 }
 
 
+
+
+
+
+
+// .mydiv {
+//   font-size: 30px;
+//
+//   @include bounceInDown(
+//       $duration: 1s,
+//       $count: 1,
+//       $delay: .2s,
+//       $function: ease,
+//       $fill: both
+//     );
+// }
 // .mydiv1 {
 //   position:relative;
 //   animation:mymove 5s infinite;
@@ -25,7 +62,6 @@
 //   -webkit-animation-delay:2s;
 //   animation-timing-function:linear;
 // }
-
 // @for $i from 1 through 8 {
 //
 //   .mydiv#{$i} {
@@ -51,22 +87,17 @@
 //
 //
 // }
-
-@for $i from 1 through 8 {
-
-  .mydiv#{$i} {
-
-    @include bounceInDown(
-        $duration: 1s,
-        $count: 1,
-        $delay: .2s,
-        $function: ease,
-        $fill: both
-      );
-
-
-  }
-
-
-
-}
+// @for $i from 1 through 8 {
+//
+//   .mydiv#{$i} {
+//
+//     @include bounceInDown(
+//         $duration: 1s,
+//         $count: 1,
+//         $delay: .2s,
+//         $function: ease,
+//         $fill: both
+//       );
+//
+//
+//   }
