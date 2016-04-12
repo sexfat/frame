@@ -8027,7 +8027,8 @@
     -ms-transform-origin: center bottom;
     -o-transform-origin: center bottom;
     transform-origin: center bottom; } }
-a, a:hover {
+a,
+a:hover {
   text-decoration: none; }
 
 .download-area .button {
@@ -8048,7 +8049,8 @@ a, a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
-  margin-left: -1.4em; }
+  margin-left: -1.4em;
+  color: #fff; }
 .download-area .button:hover {
   padding: 0.5em 1.8em 0.5em 2.3em;
   border: 1px solid transparent;
@@ -8057,3 +8059,23 @@ a, a:hover {
 .download-area .button:hover i {
   opacity: 1;
   margin-left: 0.6em; }
+
+.svg_circle {
+  margin-top: 30px;
+  width: 300px;
+  height: 300px; }
+
+.svg_line {
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  cursor: pointer; }
+  .svg_line svg line {
+    stroke-width: 3;
+    stroke: #ecf0f1;
+    fill: none;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out; }
+  .svg_line:hover svg line {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s; }
