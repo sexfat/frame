@@ -1,0 +1,14 @@
+//base
+@import "base/variables";
+@import "base/mixin";
+@import "layout/grid";
+@import "layout/rwd";
+
+
+.button {
+
+ width: 100px;
+ height: 50px;
+ background-color: #df1a1a;
+ color: #fff
+}
