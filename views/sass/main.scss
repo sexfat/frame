@@ -3,6 +3,7 @@
 @import "base/mixin";
 @import "layout/grid";
 @import "layout/rwd";
+@import "base/test";
 .wrapper {
   .floating_icon {
     border-radius: 50px;
@@ -23,6 +24,7 @@
     @include scale(1.2);
   }
 }
+
 // .test {
 //
 //     height: 200px;
