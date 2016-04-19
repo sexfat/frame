@@ -8074,36 +8074,7 @@ table {
       left: 0;
       right: 0;
       bottom: 0; }
-    .parallax .parallax__group .full_all {
-      background-color: #136664;
-      width: 100%;
-      height: 100vh; }
-    .parallax .parallax__group .parallax__layer--fore {
-      z-index: 4; }
-    .parallax .parallax__group .parallax__layer--base {
-      z-index: 3;
-      background-color: #1dbdb9; }
-    .parallax .parallax__group .parallax__layer--back {
-      z-index: 2; }
-      .parallax .parallax__group .parallax__layer--back .for_01 {
-        width: 30%;
-        height: 25vh;
-        background-color: #301366;
-        margin-top: 100vh;
-        position: relative;
-        opacity: 0.9;
-        left: 20%; }
-      .parallax .parallax__group .parallax__layer--back .for_02 {
-        width: 50%;
-        height: 40vh;
-        left: 30%;
-        background-color: #301366;
-        left: 0;
-        position: relative;
-        opacity: 0.9; }
-    .parallax .parallax__group .parallax__layer--deep {
-      z-index: 1; }
-      .parallax .parallax__group .parallax__layer--deep .for_02 {
+      .parallax .parallax__group .parallax__layer .for_02 {
         width: 50%;
         height: 40vh;
         left: 30%;
@@ -8111,3 +8082,31 @@ table {
         left: 0;
         position: relative;
         opacity: 0.9; }
+      .parallax .parallax__group .parallax__layer .deep_02 {
+        width: 50%;
+        height: 10vh;
+        left: 60%;
+        background-color: #8ee2df;
+        left: 0;
+        position: relative;
+        opacity: 0.9; }
+      .parallax .parallax__group .parallax__layer .back_02 {
+        width: 80%;
+        height: 20vh;
+        left: 33%;
+        background-color: #3f731f;
+        left: 100;
+        position: relative;
+        opacity: 0.9; }
+    .parallax .parallax__group .full_all {
+      background-color: #136664;
+      width: 100%;
+      height: 100vh; }
+    .parallax .parallax__group .parallax__layer-fore {
+      z-index: 4; }
+    .parallax .parallax__group .parallax__layer-base {
+      z-index: 3; }
+    .parallax .parallax__group .parallax__layer-back {
+      z-index: 2; }
+    .parallax .parallax__group .parallax__layer-deep {
+      z-index: 1; }
