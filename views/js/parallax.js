@@ -91,7 +91,7 @@ var   lv0 = body.querySelector('.parallax__layer-deep'),
       lv3 = body.querySelector('.parallax__layer-fore');
 body.addEventListener('scroll', function(e) {
       scrollTop = body.scrollTop;
-      lv0.style.top = parseInt(scrollTop * 0.333) + 'px';
-      lv2.style.top = (scrollTop*-1) + 'px';
+      lv0.style.top = parseInt(scrollTop * 0.111) + 'px';
+      lv2.style.top = parseInt(scrollTop*-0.5) + 'px';
       lv3.style.top = (scrollTop*-2) + 'px';
 });
