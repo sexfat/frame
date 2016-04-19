@@ -237,11 +237,6 @@
   .s_col:first-child,
   .s_col_12 {
     margin-left: 0; } }
-#id {
-  text-align: center;
-  font: 14px;
-  border: 1px; }
-
 .wrapper .floating_icon {
   border-radius: 50px;
   margin: 100px;
@@ -262,5 +257,3 @@
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
-
-/*# sourceMappingURL=main.css.map */
