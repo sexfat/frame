@@ -8155,3 +8155,11 @@ body {
   width: 200px;
   background-image: url("http://fc04.deviantart.net/fs71/i/2013/070/e/d/ice_planet___kronos_by_khrymsyn-d5xqmnm.png");
   z-index: 10; }
+
+.wrapper .width_h {
+  width: 100px;
+  height: 100px; }
+.wrapper .rect {
+  background: #ff1b1b; }
+.wrapper .rect_02 {
+  background: #08648c; }
