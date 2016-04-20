@@ -8160,6 +8160,7 @@ body {
   width: 100px;
   height: 100px; }
 .wrapper .rect {
-  background: #ff1b1b; }
+  background: #ff1b1b;
+  position: relative; }
 .wrapper .rect_02 {
   background: #08648c; }
