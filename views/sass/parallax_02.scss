@@ -1,0 +1,45 @@
+//parallax_02
+//base
+@import "base/variables";
+@import "base/mixin";
+@import "layout/grid";
+@import "base/reset";
+@import "layout/rwd"; //animation
+
+.width_h {
+      width: 100px;
+      height: 100px;
+      position: relative;
+}
+.all_width {
+      width: 100%;
+      height: 100vh;
+}
+.wrapper {
+      background-color: #e7bfa5;
+
+      .rect {
+            background: #ff1b1b;
+      }
+      .rect_02 {
+            background: #08648c;
+      }
+}
+.one {
+      background-color: #a5aae7;
+      .rect {
+            background: #ff1b1b;
+      }
+      .rect_02 {
+            background: #08648c;
+      }
+}
+.second {
+      background-color: #b57b95;
+      .rect {
+            background: #ff1b1b;
+      }
+      .rect_02 {
+            background: #08648c;
+      }
+}
