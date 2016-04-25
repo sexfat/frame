@@ -5,23 +5,15 @@ var controller = new ScrollMagic.Controller();
 
 // create a scene
 var scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger1",
-            duration: 100 // the scene should last for a scroll distance of 100px
-            //   offset: 150        // start this scene after scrolling for 50px
-console.log('ok')
-      })
-
-      // .setPin("#trigger1") // pins the element for the the scene's duration
-      // pins the element for the the scene's duration
-      .setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-						// .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-
+							triggerElement: "#trigger1" ,
+                                          duration: 500,
+                                          offset: 50
+						})
+                                    .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
+                                              rotation: 180,
+                                              y: 100
+                                       }, 0.5))
 						.addTo(controller);
-      //
-      // .addTo(controller); // assign the scene to the controller
-
-
-
 
 
 
