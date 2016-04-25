@@ -16,26 +16,23 @@
       <!-- <script src="../js/modernizr-custom.js"></script> -->
 
 
-      <script>
-
-      </script>
 
 </head>
 
 <body>
 
-      <div id="trigger1" class="wrapper all_width">
-            <div  class="rect width_h layer-1">01</div>
-            <div class="rect_02 width_h layer-2">02</div>
+      <div class="wrapper all_width">
+            <!-- <div  class="rect width_h layer-1">01</div>
+            <div class="rect_02 width_h layer-2">02</div> -->
       </div>
-      <div  class="one all_width">
-            <div class="rect width_h ">01</div>
+      <div   class="one all_width">
+            <div id="trigger1" class="rect width_h ">01</div>
             <div class="rect_02 width_h">02</div>
       </div>
 
       <div class="second all_width">
-            <div class="rect width_h">01</div>
-            <div class="rect_02 width_h">02</div>
+            <!-- <div class="rect width_h">01</div>
+            <div class="rect_02 width_h">02</div> -->
       </div>
 
 
@@ -45,9 +42,29 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-      <script src="js/parallax_02.js"></script>
+      <!-- <script src="js/parallax_02.js"></script> -->
+      <script type="text/javascript">
+      var controller = new ScrollMagic.Controller();
 
+      // create a scene
+      var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1",
+                  duration: 1000 // the scene should last for a scroll distance of 100px
+                  //   offset: 150        // start this scene after scrolling for 50px
+
+            })
+
+            // .setPin("#trigger1") // pins the element for the the scene's duration
+            // pins the element for the the scene's duration
+            // .setTween(TweenMax.to(".rect", 1, {
+            //       rotation: 180,
+            //       y: 100
+            // }, 0.5))
+            .addTo(controller); // assign the scene to the controller
+
+      </script>
 
 </body>
+
 
 </html>

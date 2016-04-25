@@ -4,10 +4,10 @@
 var controller = new ScrollMagic.Controller();
 
 // create a scene
-new ScrollMagic.Scene({
+var scene = new ScrollMagic.Scene({
             triggerElement: "#trigger1",
-            // duration: 500 // the scene should last for a scroll distance of 100px
-              offset: 150        // start this scene after scrolling for 50px
+            duration: 500 // the scene should last for a scroll distance of 100px
+            //   offset: 150        // start this scene after scrolling for 50px
 
       })
 
@@ -17,6 +17,7 @@ new ScrollMagic.Scene({
             rotation: 180,
             y: 100
       }, 0.5))
+      console.log('ok');
       .addTo(controller); // assign the scene to the controller
 
 
