@@ -5,15 +5,15 @@ var controller = new ScrollMagic.Controller();
 
 // create a scene
 var scene = new ScrollMagic.Scene({
-							triggerElement: "#trigger1" ,
-                                          duration: 500,
-                                          offset: 50
-						})
-                                    .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
-                                              rotation: 180,
-                                              y: 100
-                                       }, 0.5))
-						.addTo(controller);
+            triggerElement: "#trigger1",
+            duration: 500,
+            offset: 50
+      })
+      .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
+            rotation: 180,
+            y: 100
+      }, 0.5))
+      .addTo(controller);
 
 
 
