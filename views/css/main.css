@@ -257,3 +257,17 @@
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
+
+.test {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+  -moz-transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s; }

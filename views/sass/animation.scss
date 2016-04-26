@@ -64,25 +64,25 @@ a:hover {
    }
  }
 }
-// .mydiv {
-//   font-size: 30px;
-//
-//   @include bounceInDown(
-//       $duration: 1s,
-//       $count: 1,
-//       $delay: .2s,
-//       $function: ease,
-//       $fill: both
-//     );
-// }
-// .mydiv1 {
-//   position:relative;
-//   animation:mymove 5s infinite;
-//   animation-delay:2s;
-//   -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
-//   -webkit-animation-delay:2s;
-//   animation-timing-function:linear;
-// }
+.mydiv {
+  font-size: 30px;
+
+  @include bounceInDown(
+      $duration: 1s,
+      $count: 1,
+      $delay: .2s,
+      $function: ease,
+      $fill: both
+    );
+}
+.mydiv1 {
+  position:relative;
+  animation:mymove 5s infinite;
+  animation-delay:2s;
+  -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+  -webkit-animation-delay:2s;
+  animation-timing-function:linear;
+}
 // @for $i from 1 through 8 {
 //
 //   .mydiv#{$i} {
@@ -108,17 +108,21 @@ a:hover {
 //
 //
 // }
-// @for $i from 1 through 8 {
-//
-//   .mydiv#{$i} {
-//
-//     @include bounceInDown(
-//         $duration: 1s,
-//         $count: 1,
-//         $delay: .2s,
-//         $function: ease,
-//         $fill: both
-//       );
-//
-//
-//   }
+@for $i from 1 through 8 {
+
+  .mydiv#{$i} {
+        animation-delay: 1s*$i;
+            -webkit-animation: mymove#{$i} 3s infinite; /*Safari and Chrome*/
+            -webkit-animation-delay: 1s*$i;
+
+    @include bounceInDown(
+        $duration: 1s,
+        $count: 1,
+        $delay: .2s,
+        $function: ease,
+        $fill: both
+      );
+
+
+      }
+    }

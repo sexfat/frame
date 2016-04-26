@@ -3,6 +3,7 @@
 @import "base/mixin";
 @import "layout/grid";
 @import "layout/rwd";
+@import "vendor/skel";
 
 .wrapper {
   .floating_icon {
@@ -24,6 +25,19 @@
     @include scale(1.2);
   }
 }
+
+.test {
+
+@include vendor('transform', 'scale(1)');
+@include vendor('transition', 'none !important');
+@include vendor('transition', 'all 0.35s');
+
+
+
+}
+
+
+
 
 // .test {
 //
