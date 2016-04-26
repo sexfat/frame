@@ -8027,6 +8027,17 @@
     -ms-transform-origin: center bottom;
     -o-transform-origin: center bottom;
     transform-origin: center bottom; } }
+body {
+  font-family: 'Droid Serif', serif; }
+
+.download-area {
+  margin-top: 0;
+  margin-bottom: 100px; }
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
 a,
 a:hover {
   text-decoration: none; }
@@ -8454,3 +8465,13 @@ a:hover {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
+
+.b_g {
+  font-weight: 400; }
+  .b_g .begin {
+    font-size: 60px;
+    font-style: italic; }
+  .b_g .again {
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 140px; }
