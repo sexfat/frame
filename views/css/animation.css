@@ -8475,3 +8475,29 @@ a:hover {
     font-size: 30px;
     font-style: italic;
     margin-left: 140px; }
+
+.menu_btn .button {
+  display: inline-block;
+  font-size: 1.2em;
+  background: 0;
+  color: #d02682;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-font-smoothing: antialiased; }
+.menu_btn .button i {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  margin-left: -0.3em;
+  color: #ffrgb 232, 165, 34; }
+.menu_btn .button:hover {
+  margin-left: 0.6em;
+  color: #ffrgb 255, 126, 8; }
+.menu_btn .button:hover i {
+  opacity: 1;
+  margin-left: 0.5em;
+  margin-right: 0.5em; }

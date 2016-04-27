@@ -18,6 +18,8 @@ a,
 a:hover {
       text-decoration: none;
 }
+
+
 // download animation
 .download-area {
       .button {
@@ -47,6 +49,10 @@ a:hover {
             margin-left: 0.6em;
       }
 }
+
+
+
+
 .svg_circle {
       margin-top: 30px;
       width: 300px;
@@ -131,5 +137,35 @@ a:hover {
             font-size: 30px;
             font-style: italic;
             margin-left: 140px;
+      }
+}
+
+
+//button
+
+
+.menu_btn {
+      .button {
+            display: inline-block;
+            font-size: 1.2em;
+            background: 0;
+            color: #d02682;
+            @include transition(all , 0.2s);
+            -webkit-font-smoothing: antialiased;
+      }
+      .button i {
+            @include transition(all , 0.3s);
+            opacity: 0;
+            margin-left: -0.3em;
+            color: #ffrgb(232, 165, 34);
+      }
+      .button:hover {
+            margin-left: 0.6em;
+            color: #ffrgb(255, 126, 8);
+      }
+      .button:hover i {
+            opacity: 1;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
       }
 }
