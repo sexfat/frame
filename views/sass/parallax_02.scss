@@ -1,11 +1,11 @@
 //parallax_02
 //base
 @import "base/variables";
+@import "base/font";
 @import "base/mixin";
 @import "layout/grid";
 @import "base/reset";
 @import "layout/rwd"; //animation
-
 .width_h {
       width: 100px;
       height: 100px;
@@ -17,7 +17,6 @@
 }
 .wrapper {
       background-color: #e7bfa5;
-
       .rect {
             background: #ff1b1b;
       }
@@ -36,10 +35,13 @@
 }
 .second {
       background-color: #b57b95;
-      .rect {
-            background: #ff1b1b;
-      }
-      .rect_02 {
-            background: #08648c;
+      .areatext {
+            @include margin-auto ();
+            height: 400px;
+            width: 550px;
+            // background-color: #99c9f0;
+            text-align: center;
+            padding-top:100px;
+            opacity: 0;
       }
 }

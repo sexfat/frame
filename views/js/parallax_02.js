@@ -1,22 +1,48 @@
 //ease: Elastic.easeOut  /   Linear.easeIn  /Linear.easeNone /Bounce
+$(function() {
 
-// init controller
-var controller = new ScrollMagic.Controller();
 
-// create a scene
-var scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger1",
-            duration: 230,
-            offset: 250
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // create a scene
+      var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger1",
+                  duration: 1000,
+                  offset: 250
+
+            })
+            .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
+                  rotation: 180,
+                  y: 100,
+                  ease: Elastic.easeOut,
+            }, 0.5))
+
+
+
+
+      .addTo(controller);
+
+// second scene view
+
+
+      var scene = new ScrollMagic.Scene({
+            triggerElement: "#trigger2",
+            duration: 300,
+            offset: 250,
+            //only run once
+            reverse:false
       })
-      .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1,  {
-            rotation: 180,
-            y: 100,
-            ease:Linear.easeOut,
-      }, 0.5))
+      .setTween(TweenMax.to(".areatext", 1, {
+            opacity: 1,
+            ease: Power2.easeInOut
+      }))
+      .addTo(controller);
+});
 
-.addTo(controller);
 
+
+// remove class binding from the scene without reset
 
 
 // var camera, scene, renderer, particles, particle, material, particleCount, points, texture;

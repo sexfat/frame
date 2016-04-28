@@ -1,3 +1,9 @@
+*, body {
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  letter-spacing: inherit; }
+
 *,
 *:after,
 *:before {
@@ -242,7 +248,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -295,7 +300,11 @@ table {
 
 .second {
   background-color: #b57b95; }
-  .second .rect {
-    background: #ff1b1b; }
-  .second .rect_02 {
-    background: #08648c; }
+  .second .areatext {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 550px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 0; }
