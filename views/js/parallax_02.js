@@ -8,14 +8,15 @@ $(function() {
       // create a scene
       var scene = new ScrollMagic.Scene({
                   triggerElement: "#trigger1",
-                  duration: 1000,
-                  offset: 250
+                  duration: 500,
+                  offset: -250,
+                  reverse:false
 
             })
             .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
                   rotation: 180,
                   y: 100,
-                  ease: Elastic.easeOut,
+                  ease:  Quad.easeOut,
             }, 0.5))
 
 
