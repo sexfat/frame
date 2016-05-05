@@ -10,12 +10,14 @@ $(function() {
                   triggerElement: "#trigger1",
                   duration: 500,
                   offset: -250,
-                  reverse:false
+                  // reverse:false
 
             })
             .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
                   rotation: 180,
                   y: 100,
+                  x: 100,
+                  opacity: 1,
                   ease:  Quad.easeOut,
             }, 0.5))
 

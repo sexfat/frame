@@ -35,7 +35,20 @@
 
 
 }
+// $image-path: 'img' !default;
+// $fallback-extension: 'png' !default;
+// $retina-suffix: '@2x';
 
+$public_path: 'img/';
+
+//src="img/free_table.jpg"
+
+.svg {
+
+@include vector-bg-with-fallback('free_table');
+
+
+}
 
 
 

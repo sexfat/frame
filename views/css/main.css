@@ -271,3 +271,7 @@
   -webkit-transition: all 0.35s;
   -ms-transition: all 0.35s;
   transition: all 0.35s; }
+
+.svg {
+  background-image: url("img/images/free_table.png");
+  background-image: none, url("img/images/free_table.svg"); }
