@@ -34,10 +34,11 @@ $(function() {
             duration: 300,
             offset: 250,
             //only run once
-            reverse:false
+            // reverse:false
       })
-      .setTween(TweenMax.to(".areatext", 1, {
+      .setTween(TweenMax.staggerTo(".areatext", 1, {
             opacity: 1,
+            y: 10,
             ease: Power2.easeInOut
       }))
       .addTo(controller);
