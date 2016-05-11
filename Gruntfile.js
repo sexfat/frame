@@ -86,7 +86,20 @@ module.exports = function(grunt) {
           }
         }
       }
+},
+
+   // browserify
+    browserify: {
+          build: {
+            src: 'views/js/preload.js',
+            dest: 'views/js/bundle.js'
+          }
     }
+
+
+
+
+
   });
 
   // load npm tasks
@@ -96,7 +109,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-browserify');
 
   // define default task
-  grunt.registerTask('default', ['browserSync', 'watch', 'jade', 'jshint']);
+  grunt.registerTask('default', ['browserSync','browserify', 'watch', 'jade', 'jshint']);
 };
