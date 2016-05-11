@@ -2,6 +2,8 @@ var $ = require("jquery");
 
 $(document).ready(function(){
 
+      console.log("hello world");
+
  var	$window = $(window);
       $body = $('body');
 

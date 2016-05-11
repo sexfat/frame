@@ -308,3 +308,12 @@ table {
     text-align: center;
     padding-top: 100px;
     opacity: 0; }
+
+.three {
+  background-color: #8dedd6; }
+  .three .robot {
+    background: url("../img/01.jpg");
+    width: 602px;
+    height: 728px;
+    display: block;
+    opacity: 0; }

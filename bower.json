@@ -19,5 +19,8 @@
     "views/libs",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "gsap": "^1.18.4"
+  }
 }

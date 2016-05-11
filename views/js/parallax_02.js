@@ -1,4 +1,14 @@
 //ease: Elastic.easeOut  /   Linear.easeIn  /Linear.easeNone /Bounce
+// var $ = require("jquery");
+//
+//
+// require("../libs/gsap/src/minified/TweenMax.min.js");
+// require("../libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js");
+// require("../libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js");
+// require("../libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js");
+
+
+
 $(function() {
 
 
@@ -10,7 +20,7 @@ $(function() {
                   triggerElement: "#trigger1",
                   duration: 500,
                   offset: -250,
-                  // reverse:false
+                  reverse:true
 
             })
             .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
@@ -34,14 +44,33 @@ $(function() {
             duration: 300,
             offset: 250,
             //only run once
-            // reverse:false
+            reverse:true
       })
       .setTween(TweenMax.staggerTo(".areatext", 1, {
             opacity: 1,
             y: 10,
-            ease: Power2.easeInOut
+            ease: Back.easeOut
       }))
       .addTo(controller);
+
+
+
+
+
+      // three scene view
+
+
+            var scene = new ScrollMagic.Scene({
+                  triggerElement: "#trigger3",
+                  duration: 210,
+                  offset: 150,
+                  //only run once
+                  reverse:true
+            })
+            .setTween(TweenMax.staggerTo(".robot" , 1 ,{ opacity: 1, x: 100, transform: 'scale(.5)', yoyo: true ,  ease:  Power2.easeOut }))
+            .addTo(controller);
+
+
 });
 
 

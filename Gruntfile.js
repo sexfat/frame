@@ -91,8 +91,12 @@ module.exports = function(grunt) {
    // browserify
     browserify: {
           build: {
-            src: 'views/js/preload.js',
-            dest: 'views/js/bundle.js'
+            src: 'views/js/parallax_02.js',
+            dest: 'views/js/bundle.js',
+            // expand: true,
+            // cwd: 'views/js/',
+            // src: 'bundle.js',
+            // dest: 'views/js/'
           }
     }
 
