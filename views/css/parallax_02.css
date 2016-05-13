@@ -300,14 +300,13 @@ table {
 
 .second {
   background-color: #b57b95; }
-  .second .areatext {
+  .second .areatext, .second .areatext2 {
     margin-left: auto;
     margin-right: auto;
     height: 400px;
     width: 550px;
     text-align: center;
-    padding-top: 100px;
-    opacity: 0; }
+    padding-top: 100px; }
 
 .three {
   background-color: #8dedd6; }

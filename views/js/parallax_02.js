@@ -14,44 +14,59 @@ $(function() {
 
       // init controller
       var controller = new ScrollMagic.Controller();
+      var frame = new TimelineMax({
+            pause: true
+      });
+      frame.add("start") // add timeline label
+
+      // tween1
+      var tween1 = frame.staggerTo([".rect", ".rect_02"], 2, {
+            rotation: 180,
+            y: 100,
+            x: 100,
+            opacity: 1,
+            ease: Quad.easeOut,
+      }, "start");
 
       // create a scene
-      var scene = new ScrollMagic.Scene({
+      var scene1 = new ScrollMagic.Scene({
                   triggerElement: "#trigger1",
-                  duration: 500,
+                  // duration: 300,
                   offset: -250,
-                  reverse:true
-
+                  reverse: false
             })
-            .setTween(TweenMax.staggerTo([".rect", ".rect_02"], 1, {
-                  rotation: 180,
-                  y: 100,
-                  x: 100,
-                  opacity: 1,
-                  ease:  Quad.easeOut,
-            }, 0.5))
+            .setTween(tween1)
+            .addTo(controller);
 
+      // second scene view
 
-
-
-      .addTo(controller);
-
-// second scene view
-
-
-      var scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger2",
-            duration: 300,
-            offset: 250,
-            //only run once
-            reverse:true
-      })
-      .setTween(TweenMax.staggerTo(".areatext", 1, {
+      var tween2 = frame.fromTo(".areatext", 1, {
+            opacity: 0,
+            y: 0,
+      }, {
             opacity: 1,
-            y: 10,
-            ease: Back.easeOut
-      }))
-      .addTo(controller);
+            y: '80px',
+            ease: Power2.EaseInOut
+      }, "start");
+
+      var tween3 = frame.fromTo(".areatext2", 1, {
+            opacity: 0,
+            y: 0,
+      }, {
+            opacity: 1,
+            y: '60px',
+            ease: Power2.EaseInOut
+      }, "start");
+
+      var scene2 = new ScrollMagic.Scene({
+                  triggerElement: "#trigger2",
+                  // duration: 150,
+                  offset: 250,
+                  //only run once
+                  reverse: true
+            })
+            .setTween(tween2)
+            .addTo(controller);
 
 
 
@@ -60,14 +75,20 @@ $(function() {
       // three scene view
 
 
-            var scene = new ScrollMagic.Scene({
+      var scene = new ScrollMagic.Scene({
                   triggerElement: "#trigger3",
                   duration: 210,
                   offset: 150,
                   //only run once
-                  reverse:true
+                  reverse: false
             })
-            .setTween(TweenMax.staggerTo(".robot" , 1 ,{ opacity: 1, x: 100, transform: 'scale(.5)', yoyo: true ,  ease:  Power2.easeOut }))
+            .setTween(TweenMax.staggerTo(".robot", 1, {
+                  opacity: 1,
+                  x: 100,
+                  transform: 'scale(.5)',
+                  yoyo: true,
+                  ease: Power2.easeOut
+            }))
             .addTo(controller);
 
 

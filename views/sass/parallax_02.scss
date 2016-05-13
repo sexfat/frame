@@ -35,14 +35,14 @@
 }
 .second {
       background-color: #b57b95;
-      .areatext {
+      .areatext , .areatext2 {
             @include margin-auto ();
             height: 400px;
             width: 550px;
             // background-color: #99c9f0;
             text-align: center;
             padding-top: 100px;
-            opacity: 0;
+            // opacity: 0;
       }
 }
 .three {
