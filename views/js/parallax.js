@@ -81,8 +81,13 @@
 // 	}
 //
 // }
+
+
+
+
 window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
       window.webkitRequestAnimationFrame || window.oRequestAnimationFrame;
+
 var body = document.querySelector('.parallax'),
       scrollTop = 0;
 var   lv0 = body.querySelector('.parallax__layer-deep'),

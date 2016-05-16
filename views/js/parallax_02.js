@@ -1,7 +1,20 @@
-//ease: Elastic.easeOut  /   Linear.easeIn  /Linear.easeNone /Bounce
-// var $ = require("jquery");
-//
-//
+// ----------------------
+// tween effect code
+// ----------------------
+//ease: Elastic.easeOut / Power0.easeOut / Back.easeOut / Bounce.easeOut / Rough.easeOut / SlowMo / Stepped.easeOut / Circ.easeOut / Expo.easeOut / Sine.easeOut
+//ease: easeIn  / easeInOut / easeOut
+// http://greensock.com/ease-visualizer
+
+
+// ----------------------
+//  boswerify plugin code
+// ----------------------
+//  var $ = require("jquery");
+
+
+// -----------------
+//  path
+// -----------------
 // require("../libs/gsap/src/minified/TweenMax.min.js");
 // require("../libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js");
 // require("../libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js");
@@ -11,7 +24,7 @@
 
 $(function() {
 
-
+      
       // init controller
       var controller = new ScrollMagic.Controller();
       var frame = new TimelineMax({
@@ -49,6 +62,8 @@ $(function() {
             ease: Power2.EaseInOut
       }, "start");
 
+
+      // 用 變數設定tween
       var tween3 = frame.fromTo(".areatext2", 1, {
             opacity: 0,
             y: 0,
@@ -65,17 +80,15 @@ $(function() {
                   //only run once
                   reverse: true
             })
+            // 設定變數
             .setTween(tween2)
             .addTo(controller);
-
-
-
 
 
       // three scene view
 
 
-      var scene = new ScrollMagic.Scene({
+      var scene3 = new ScrollMagic.Scene({
                   triggerElement: "#trigger3",
                   duration: 210,
                   offset: 150,
