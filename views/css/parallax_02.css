@@ -8090,7 +8090,8 @@ table {
 
 .second {
   background-color: #b57b95; }
-  .second .areatext, .second .areatext2 {
+  .second .areatext,
+  .second .areatext2 {
     margin-left: auto;
     margin-right: auto;
     height: 400px;
@@ -8109,43 +8110,33 @@ table {
 
 .four {
   background-color: #8da8ed; }
-  .four .cssanimation {
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0;
+    top: 0; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0;
+    top: 0; } }
+  .four #cssanimation {
     width: 100px;
     height: 100px;
     background-color: #c5cf0f;
-    -webkit-animation-name: bounceOut;
-    -moz-animation-name: bounceOut;
-    -ms-animation-name: bounceOut;
-    -o-animation-name: bounceOut;
-    animation-name: bounceOut;
-    -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -ms-animation-iteration-count: 1;
-    -o-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -ms-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation-timing-function: ease;
-    -moz-animation-timing-function: ease;
-    -ms-animation-timing-function: ease;
-    -o-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    /* backface-visibility: hidden; */
-    }
+    display: block;
+    position: relative; }
+  .four .active {
+    animation-name: example;
+    animation-duration: 4s; }

@@ -33,7 +33,7 @@ $(function() {
       frame.add("start") // add timeline label
 
       // tween1
-      var tween1 = frame.staggerTo([".rect", ".rect_02"], 2, {
+      var tween1 = frame.staggerTo([".rect", ".rect_02"], 1, {
             rotation: 180,
             y: 100,
             x: 100,
@@ -44,9 +44,9 @@ $(function() {
       // create a scene
       var scene1 = new ScrollMagic.Scene({
                   triggerElement: "#trigger1",
-                  // duration: 300,
-                  offset: -250,
-                  reverse: false
+                  duration: 300,
+                  offset: 150,
+                  reverse: true
             })
             .setTween(tween1)
             .addTo(controller);
@@ -105,16 +105,16 @@ $(function() {
             .addTo(controller);
 
 
-      // four scene view
+      // four scene view 用 css3 的方式
 
-      var scene3 = new ScrollMagic.Scene({
+      var scene4 = new ScrollMagic.Scene({
                   triggerElement: "#trigger4",
                   offset: 150,
                   //only run once
-                  reverse: false
+                  reverse: true
             })
             //設定css
-            .setClassToggle("#a", "#b")
+            .setClassToggle('#cssanimation' ,'active')
             .addTo(controller);
 
 });

@@ -7,8 +7,6 @@
 @import "base/reset";
 @import "layout/rwd";
 @import "animation/animate"; //animation
-
-
 .width_h {
       width: 100px;
       height: 100px;
@@ -38,7 +36,8 @@
 }
 .second {
       background-color: #b57b95;
-      .areatext , .areatext2 {
+      .areatext,
+      .areatext2 {
             @include margin-auto ();
             height: 400px;
             width: 550px;
@@ -57,18 +56,46 @@
             display: block;
             opacity: 0;
       }
-
-
 }
-
-
 .four {
       background-color: #8da8ed;
-   .cssanimation {
-        width: 100px;
-        height: 100px;
-        background-color: #c5cf0f;
-        @include bounceOut();
-   }
+      @keyframes example {
+            0% {
+                  background-color: red;
+                  left: 0;
+                  top: 0;
+            }
+            25% {
+                  background-color: yellow;
+                  left: 200px;
+                  top: 0;
+            }
+            50% {
+                  background-color: blue;
+                  left: 200px;
+                  top: 200px;
+            }
+            75% {
+                  background-color: green;
+                  left: 0;
+                  top: 200px;
+            }
+            100% {
+                  background-color: red;
+                  left: 0;
+                  top: 0;
+            }
+      }
+      #cssanimation {
+            width: 100px;
+            height: 100px;
+            background-color: #c5cf0f;
+            display: block;
+            position: relative;
 
+      }
+      .active {
+            animation-name: example;
+            animation-duration: 4s;
+      }
 }
