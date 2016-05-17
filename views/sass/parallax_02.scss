@@ -5,7 +5,10 @@
 @import "base/mixin";
 @import "layout/grid";
 @import "base/reset";
-@import "layout/rwd"; //animation
+@import "layout/rwd";
+@import "animation/animate"; //animation
+
+
 .width_h {
       width: 100px;
       height: 100px;
@@ -54,4 +57,18 @@
             display: block;
             opacity: 0;
       }
+
+
+}
+
+
+.four {
+      background-color: #8da8ed;
+   .cssanimation {
+        width: 100px;
+        height: 100px;
+        background-color: #c5cf0f;
+        @include bounceOut();
+   }
+
 }

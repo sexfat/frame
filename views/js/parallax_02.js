@@ -24,7 +24,7 @@
 
 $(function() {
 
-      
+
       // init controller
       var controller = new ScrollMagic.Controller();
       var frame = new TimelineMax({
@@ -104,6 +104,18 @@ $(function() {
             }))
             .addTo(controller);
 
+
+      // four scene view
+
+      var scene3 = new ScrollMagic.Scene({
+                  triggerElement: "#trigger4",
+                  offset: 150,
+                  //only run once
+                  reverse: false
+            })
+            //設定css
+            .setClassToggle("#a", "#b")
+            .addTo(controller);
 
 });
 
