@@ -24,6 +24,26 @@
 
 $(function() {
 
+      //basic
+      TweenMax.fromTo(".leftimg", 1, {
+            x: 0,
+            opacity: 0,
+
+      }, {
+            x: 50,
+            opacity: 1,
+            delay: 0.5
+      });
+      TweenMax.fromTo('.rightimg', 1, {
+            x: 0,
+            opacity: 0,
+
+      }, {
+            x: -50,
+            opacity: 1,
+            delay: 0.5
+      });
+
 
       // init controller
       var controller = new ScrollMagic.Controller();
@@ -33,7 +53,7 @@ $(function() {
       frame.add("start") // add timeline label
 
       // tween1
-      var tween1 = frame.from([".rect", ".rect_02"], 1, {
+      var tween1 = frame.to([".rect", ".rect_02"], 1, {
             rotation: 180,
             y: 100,
             x: 100,
@@ -45,7 +65,7 @@ $(function() {
       var scene = new ScrollMagic.Scene({
                   triggerElement: "#trigger1",
                   duration: 300,
-                  offset: 150,
+                  offset: -50,
                   reverse: true
             })
             .setTween(tween1)
@@ -114,7 +134,7 @@ $(function() {
                   reverse: true
             })
             //設定css
-            .setClassToggle('#cssanimation' ,'active')
+            .setClassToggle('#cssanimation', 'active')
             .addTo(controller);
 
 });
