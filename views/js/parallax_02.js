@@ -3,7 +3,7 @@
 // ----------------------
 //ease: Elastic.easeOut / Power0.easeOut / Back.easeOut / Bounce.easeOut / Rough.easeOut / SlowMo / Stepped.easeOut / Circ.easeOut / Expo.easeOut / Sine.easeOut
 //ease: easeIn  / easeInOut / easeOut
-// http://greensock.com/ease-visualizer
+
 
 
 // ----------------------
@@ -33,7 +33,7 @@ $(function() {
       frame.add("start") // add timeline label
 
       // tween1
-      var tween1 = frame.staggerTo([".rect", ".rect_02"], 2, {
+      var tween1 = frame.from([".rect", ".rect_02"], 1, {
             rotation: 180,
             y: 100,
             x: 100,
@@ -42,7 +42,7 @@ $(function() {
       }, "start");
 
       // create a scene
-      var scene1 = new ScrollMagic.Scene({
+      var scene = new ScrollMagic.Scene({
                   triggerElement: "#trigger1",
                   duration: 300,
                   offset: 150,
@@ -53,7 +53,7 @@ $(function() {
 
       // second scene view
 
-      var tween2 = frame.staggerTo(".areatext", 1, {
+      var tween2 = frame.fromTo(".areatext", 1, {
             opacity: 0,
             y: 0,
       }, {
@@ -64,7 +64,7 @@ $(function() {
 
 
       // 用 變數設定tween
-      var tween3 = frame.staggerTo(".areatext2", 1, {
+      var tween3 = frame.fromTo(".areatext2", 1, {
             opacity: 0,
             y: 0,
       }, {
@@ -105,7 +105,7 @@ $(function() {
             .addTo(controller);
 
 
-      // four scene view 用 css3 的方式
+      //four scene view 用 css3 的方式
 
       var scene4 = new ScrollMagic.Scene({
                   triggerElement: "#trigger4",
