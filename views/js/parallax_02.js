@@ -33,7 +33,7 @@ $(function() {
       frame.add("start") // add timeline label
 
       // tween1
-      var tween1 = frame.staggerTo([".rect", ".rect_02"], 1, {
+      var tween1 = frame.staggerTo([".rect", ".rect_02"], 2, {
             rotation: 180,
             y: 100,
             x: 100,
@@ -53,7 +53,7 @@ $(function() {
 
       // second scene view
 
-      var tween2 = frame.fromTo(".areatext", 1, {
+      var tween2 = frame.staggerTo(".areatext", 1, {
             opacity: 0,
             y: 0,
       }, {
@@ -64,7 +64,7 @@ $(function() {
 
 
       // 用 變數設定tween
-      var tween3 = frame.fromTo(".areatext2", 1, {
+      var tween3 = frame.staggerTo(".areatext2", 1, {
             opacity: 0,
             y: 0,
       }, {

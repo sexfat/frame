@@ -8070,16 +8070,26 @@ table {
   height: 100px;
   position: relative; }
 
+.rectimg {
+  width: 200px;
+  height: 200px;
+  display: block; }
+
+.clearfix {
+  clear: both; }
+
 .all_width {
   width: 100%;
   height: 100vh; }
 
 .wrapper {
   background-color: #e7bfa5; }
-  .wrapper .rect {
-    background: #ff1b1b; }
-  .wrapper .rect_02 {
-    background: #08648c; }
+  .wrapper .full_width .leftimg {
+    background: #ffed00;
+    float: left; }
+  .wrapper .full_width .rightimg {
+    background: #00ff7d;
+    float: right; }
 
 .one {
   background-color: #a5aae7; }

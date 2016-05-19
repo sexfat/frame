@@ -12,19 +12,35 @@
       height: 100px;
       position: relative;
 }
+//區塊大小
+.rectimg {
+      width: 200px;
+      height: 200px;
+      display: block;
+}
+.clearfix {
+      clear: both;
+}
+//view
 .all_width {
       width: 100%;
       height: 100vh;
 }
+//intro
 .wrapper {
       background-color: #e7bfa5;
-      .rect {
-            background: #ff1b1b;
-      }
-      .rect_02 {
-            background: #08648c;
+      .full_width {
+            .leftimg {
+                  background: #ffed00;
+                  float: left;
+            };
+            .rightimg {
+                  background: #00ff7d;
+                  float: right;
+            };
       }
 }
+//section1
 .one {
       background-color: #a5aae7;
       .rect {
@@ -92,7 +108,6 @@
             background-color: #c5cf0f;
             display: block;
             position: relative;
-
       }
       .active {
             animation-name: example;
