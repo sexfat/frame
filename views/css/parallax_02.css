@@ -8084,12 +8084,18 @@ table {
 
 .wrapper {
   background-color: #e7bfa5; }
-  .wrapper .full_width .leftimg {
-    background: #ffed00;
-    float: left; }
-  .wrapper .full_width .rightimg {
-    background: #00ff7d;
-    float: right; }
+  .wrapper .full_width {
+    padding-top: 40%; }
+    .wrapper .full_width .leftimg {
+      background: #ffed00;
+      float: left; }
+    .wrapper .full_width .rightimg {
+      background: #00ff7d;
+      float: right; }
+    .wrapper .full_width .textcenter {
+      font-size: 50px;
+      text-align: center;
+      padding-top: 50px; }
 
 .one {
   background-color: #a5aae7; }

@@ -30,6 +30,7 @@
 .wrapper {
       background-color: #e7bfa5;
       .full_width {
+            padding-top: 40%;
             .leftimg {
                   background: #ffed00;
                   float: left;
@@ -38,6 +39,11 @@
                   background: #00ff7d;
                   float: right;
             };
+            .textcenter {
+             font-size: 50px;
+               text-align: center;
+               padding-top: 50px
+            }
       }
 }
 //section1

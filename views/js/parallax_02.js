@@ -43,6 +43,15 @@ $(function() {
             opacity: 1,
             delay: 0.5
       });
+      TweenMax.fromTo('.textcenter', 1, {
+            y: 0,
+            opacity: 0,
+
+      }, {
+            y: 10,
+            opacity: 1,
+            delay: 1.5
+      });
 
 
       // init controller
