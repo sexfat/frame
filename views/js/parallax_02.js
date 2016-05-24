@@ -34,6 +34,7 @@ $(function() {
             opacity: 1,
             delay: 0.5
       });
+
       TweenMax.fromTo('.rightimg', 1, {
             x: 0,
             opacity: 0,
@@ -61,6 +62,7 @@ $(function() {
       });
       frame.add("start") // add timeline label
 
+
       // tween1
       var tween1 = frame.to([".rect", ".rect_02"], 1, {
             rotation: 180,
@@ -69,6 +71,7 @@ $(function() {
             opacity: 1,
             ease: Quad.easeOut,
       }, "start");
+
 
       // create a scene
       var scene = new ScrollMagic.Scene({
@@ -79,6 +82,9 @@ $(function() {
             })
             .setTween(tween1)
             .addTo(controller);
+
+
+
 
       // second scene view
 
@@ -146,7 +152,47 @@ $(function() {
             .setClassToggle('#cssanimation', 'active')
             .addTo(controller);
 
+
+      //five scene  用 timelineMax 的方式
+
+
+
+      var tween = new TimelineMax({
+            pause: true
+      });
+
+
+
+
+
+      var scene5 = new ScrollMagic.Scene({
+            triggerElement: "#trigger5",
+            duration: 210,
+            offset: 150,
+            //only run once
+            reverse: false
+      })
+
+
+
+
+         tl.add(tween05);
+
+
+
+
+            .addTo(controller);
+
+
+
+
 });
+
+
+
+
+
+
 
 
 

@@ -8156,3 +8156,16 @@ table {
   .four .active {
     animation-name: example;
     animation-duration: 4s; }
+
+.five {
+  background-color: #c9a3ff; }
+  .five .rectimg {
+    margin-top: 10px;
+    position: relative; }
+  .five .cid_01 {
+    background-color: #f99494;
+    margin-top: 0; }
+  .five .cid_02 {
+    background-color: #cef4d5; }
+  .five .cid_03 {
+    background-color: #b9c45b; }
