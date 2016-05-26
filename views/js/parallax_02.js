@@ -157,13 +157,21 @@ $(function() {
 
 
 
-      var tween = new TimelineMax({
-            pause: true
-      });
 
 
-
-
+      var tween = new TimelineMax()
+      .to(".cid_01", 5, {top: "200px",left: "200px" ,ease: Quad.easeOut
+            }
+      )
+      .to(".cid_01", 2, {top: "0",left: "0" ,ease: Quad.easeOut
+            }
+      )
+      .to(".cid_02", 1, {top: "100px",left: "100px"
+            }
+      )
+      .to(".cid_03", 1, {top: "100px",left: "100px"
+            }
+      )
 
       var scene5 = new ScrollMagic.Scene({
             triggerElement: "#trigger5",
@@ -172,21 +180,11 @@ $(function() {
             //only run once
             reverse: false
       })
-
-
-
-
-         tl.add(tween05);
-
-
-
-
+            .setTween(tween)
             .addTo(controller);
 
-
-
-
 });
+
 
 
 
