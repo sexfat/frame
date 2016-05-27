@@ -28,6 +28,13 @@
                   font-size: 3em;
                   font-weight: 500;
                   opacity: 0;
+                  letter-spacing: -2px;
+                  .num {
+                  font-weight: 100;
+                  margin-left: 5px;
+                  font-size: 1.2em;
+                  }
+
             }
             // &:before {
             //       background: #000;

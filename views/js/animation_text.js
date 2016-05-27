@@ -36,5 +36,7 @@ $(function() {
             //smooth animation
             lazy: true
       }, 0.8);
-      
+
+
+
 });

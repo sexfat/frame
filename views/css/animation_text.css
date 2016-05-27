@@ -8082,7 +8082,12 @@ table {
   .section_01 .text h2 {
     font-size: 3em;
     font-weight: 500;
-    opacity: 0; }
+    opacity: 0;
+    letter-spacing: -2px; }
+    .section_01 .text h2 .num {
+      font-weight: 100;
+      margin-left: 5px;
+      font-size: 1.2em; }
   .section_01 .text .learn {
     margin-top: -10px;
     margin-left: 210px;
