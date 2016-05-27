@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,100,300,700,100italic,300italic,400italic,700italic,900,900italic");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+*, body {
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  letter-spacing: inherit; }
+
 *,
 *:after,
 *:before {
@@ -239,6 +243,38 @@
   .s_col:first-child,
   .s_col_12 {
     margin-left: 0; } }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -8029,763 +8065,42 @@
     -ms-transform-origin: center bottom;
     -o-transform-origin: center bottom;
     transform-origin: center bottom; } }
-body {
-  font-family: 'Droid Serif', serif; }
+.clearfix {
+  clear: both; }
 
-.download-area {
-  margin-top: 0;
-  margin-bottom: 100px; }
-
-section {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-a,
-a:hover {
-  text-decoration: none; }
-
-.download-area .button {
-  display: inline-block;
-  font-size: 1.2em;
-  padding: 0.5em 2.5em;
-  background: 0;
-  color: #d02682;
-  border: 1px solid rgba(208, 38, 130, 0.99);
-  border-radius: 3px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s; }
-.download-area .button i {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  margin-left: -1.4em;
-  color: #fff; }
-.download-area .button:hover {
-  padding: 0.5em 1.8em 0.5em 2.3em;
-  border: 1px solid transparent;
-  background: rgba(212, 41, 67, 0.64);
-  color: #fff; }
-.download-area .button:hover i {
-  opacity: 1;
-  margin-left: 0.6em; }
-
-.svg_circle {
-  margin-top: 30px;
-  width: 300px;
-  height: 300px; }
-
-.svg_line {
-  margin-top: 30px;
-  width: 300px;
-  height: 300px;
-  cursor: pointer; }
-  .svg_line svg line {
-    stroke-width: 3;
-    stroke: #ecf0f1;
-    fill: none;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out; }
-  .svg_line:hover svg line {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s; }
-
-.mydiv {
-  font-size: 30px;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv1 {
-  position: relative;
-  animation: mymove 5s infinite;
-  animation-delay: 2s;
-  -webkit-animation: mymove 5s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 2s;
-  animation-timing-function: linear; }
-
-.mydiv1 {
-  animation-delay: 1s;
-  -webkit-animation: mymove1 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 1s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv2 {
-  animation-delay: 2s;
-  -webkit-animation: mymove2 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 2s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv3 {
-  animation-delay: 3s;
-  -webkit-animation: mymove3 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 3s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv4 {
-  animation-delay: 4s;
-  -webkit-animation: mymove4 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 4s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv5 {
-  animation-delay: 5s;
-  -webkit-animation: mymove5 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 5s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv6 {
-  animation-delay: 6s;
-  -webkit-animation: mymove6 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 6s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv7 {
-  animation-delay: 7s;
-  -webkit-animation: mymove7 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 7s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.mydiv8 {
-  animation-delay: 8s;
-  -webkit-animation: mymove8 3s infinite;
-  /*Safari and Chrome*/
-  -webkit-animation-delay: 8s;
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -ms-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.b_g {
-  font-weight: 400; }
-  .b_g .begin {
-    font-size: 60px;
-    font-style: italic; }
-  .b_g .again {
-    font-size: 30px;
-    font-style: italic;
-    margin-left: 140px; }
-
-.menu_btn .button {
-  display: inline-block;
-  font-size: 1.2em;
-  background: 0;
-  color: #d02682;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-font-smoothing: antialiased; }
-.menu_btn .button i {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  margin-left: -0.3em;
-  color: #ffrgb 232, 165, 34; }
-.menu_btn .button:hover {
-  margin-left: 0.6em;
-  color: #ffrgb 255, 126, 8; }
-.menu_btn .button:hover i {
-  opacity: 1;
-  margin-left: 0.5em;
-  margin-right: 0.5em; }
-
-body {
-  padding: 0;
-  margin: 0; }
-
-body .btn-bg {
+.all_width {
   width: 100%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  height: 100vh;
+  padding-left: 2%;
+  padding-top: 50px; }
 
-body .btn-bg.bg-1 {
-  background: #6ab1c9; }
+.section_01 .text {
+  margin-top: 50px;
+  width: 260px;
+  height: auto;
+  position: relative; }
+  .section_01 .text h2 {
+    font-size: 3em;
+    font-weight: 500;
+    opacity: 0; }
+  .section_01 .text .learn {
+    margin-top: -10px;
+    margin-left: 210px;
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    opacity: 0; }
 
-body .btn-bg.bg-1 .btn-1 button {
-  color: #c7f8f9;
-  background: transparent;
-  border: 3px solid #c7f8f9;
-  border-radius: 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
-
-body .btn-bg.bg-1 .btn-1 button a {
-  color: #c7f8f9; }
-
-body .btn-bg.bg-1 .btn-1 button:hover {
-  background: #c7f8f9;
-  color: #6ab1c9;
-  border: 3px solid #6ab1c9;
-  -webkit-transition: all 0.35s ease 0;
-  -moz-transition: all 0.35s ease 0;
-  -o-transition: all 0.35s ease 0;
-  transition: all 0.35s ease 0; }
-
-body .btn-bg.bg-1 .btn-1 button:hover > a {
-  color: #6ab1c9;
-  -webkit-transition: all 0.35s ease 0;
-  -moz-transition: all 0.35s ease 0;
-  -o-transition: all 0.35s ease 0;
-  transition: all 0.35s ease 0; }
-
-body .btn-bg.bg-1 .btn-1 button:active {
-  -webkit-transform: translate(10px, 10px);
-  transform: translate(10px, 10px); }
-
-body .btn-bg.bg-2 {
-  background: #78c98d; }
-
-body .btn-bg.bg-2 .btn-2 button {
-  color: #78c98d;
-  background: #d0f9c7;
-  border: none;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease; }
-
-body .btn-bg.bg-2 .btn-2 button:hover {
-  background: transparent;
-  color: #d0f9c7; }
-
-body .btn-bg.bg-2 .btn-2 button:hover:before,
-body .btn-bg.bg-2 .btn-2 button:hover:after {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  width: 100%; }
-
-body .btn-bg.bg-2 .btn-2 button:before,
-body .btn-bg.bg-2 .btn-2 button:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 0px;
-  height: 3px;
-  background: #d0f9c7;
-  transition: all 0.4s ease; }
-
-body .btn-bg.bg-2 .btn-2 button:after {
-  top: inherit;
-  left: inherit;
-  bottom: 0;
-  right: 0; }
-
-body .btn-bg.bg-3 {
-  background: #e5d272; }
-
-body .btn-bg.bg-3 .btn-3 button {
-  color: #e5d272;
-  background: #f6f7c5;
-  border: none;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease; }
-
-body .btn-bg.bg-3 .btn-3 button:hover {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  background: transparent;
-  color: #f6f7c5; }
-
-body .btn-bg.bg-3 .btn-3 button:hover:after {
-  transition: all 0.3s ease;
-  width: 100%;
-  left: 0; }
-
-body .btn-bg.bg-3 .btn-3 button:after {
-  position: absolute;
-  transition: all 0.3s ease;
-  content: '';
-  width: 0;
-  bottom: 0;
-  left: inherit;
-  right: 0;
-  height: 3px;
-  background: #f6f7c5; }
-
-body .btn-bg.bg-4 {
-  background: #ed6a5a; }
-
-body .btn-bg.bg-4 .btn-4 button {
-  color: #eda39a;
-  border-radius: 5px;
-  background: radial-gradient(circle, #ed412a 0.25em, transparent 0.25em) center/1.2em 1.2em;
-  border: 3px solid #ed412a;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-body .btn-bg.bg-4 .btn-4 button:hover {
-  color: #fff;
-  background: radial-gradient(circle, #ed412a 0.25em, transparent 0.25em) center/0.1em 0.1em;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-body .btn-bg.bg-5 {
-  background: #fff; }
-
-body .btn-bg.bg-5 .btn-5 h2 {
-  color: #c4c0c0; }
-
-body .btn-bg.bg-5 .btn-5 button {
-  color: #c4c0c0;
-  background: transparent;
-  border: 3px solid #c4c0c0;
-  border-radius: 5px;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-
-body .btn-bg.bg-5 .btn-5 button:hover {
-  border-color: #50514f;
-  color: #50514f;
-  background-image: repeating-linear-gradient(-25deg, #c4c0c0, #c4c0c0 3px, transparent 4px, transparent 7px);
-  background-size: 12px 16px;
-  -webkit-animation: cloud-animation 1.25s infinite ease;
-  animation: cloud-animation 1.25s infinite ease;
-  -webkit-animation-delay: 0;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-
-body .btn-bg.bg-6 {
-  background: #ac7ee5; }
-
-body .btn-bg.bg-6 .btn-6 button {
-  width: 11em;
-  height: 3em;
-  color: #d3b7f7;
-  background: transparent;
-  border: 3px solid #d3b7f7;
-  border-radius: 5px;
-  -webkit-transition: border 0.5s ease-out;
-  transition: border 0.5s ease-out;
-  transition-delay: 0.8s; }
-
-body .btn-bg.bg-6 .btn-6 button a {
-  position: absolute;
-  z-index: 2;
-  left: 43px;
-  top: 17px; }
-
-body .btn-bg.bg-6 .btn-6 button::before,
-body .btn-bg.bg-6 .btn-6 button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: 'LONG NIGHT';
-  border-radius: 50%;
-  display: block;
-  width: 22em;
-  height: 22em;
-  left: -5.5em;
-  text-align: center;
-  -webkit-transition: box-shadow 0.5s ease-out;
-  transition: box-shadow 0.5s ease-out;
-  transition-delay: 0.75s;
-  -webkit-transition-delay: 0.75s;
-  z-index: 1; }
-
-body .btn-bg.bg-6 .btn-6 button::after {
-  transition-delay: 0.25s;
-  -webkit-transition-delay: 0.25s; }
-
-body .btn-bg.bg-6 .btn-6 button:hover {
-  color: #fff;
-  border-color: #8460af;
-  animation: witch-word-color 1.5s ease;
-  -webkit-transition: border 0.2s ease;
-  transition: border 0.2s ease; }
-
-body .btn-bg.bg-6 .btn-6 button:hover::before {
-  box-shadow: inset 0 0 0 11em #b657e5;
-  transition-delay: 0.05s; }
-
-body .btn-bg.bg-6 .btn-6 button:hover::after {
-  box-shadow: inset 0 0 0 11em #8460af;
-  transition-delay: 0.5s; }
-
-.btn {
-  margin: 0 auto 30px auto;
-  display: block; }
-
-h2 {
-  text-align: center;
-  font-family: 'Raleway';
-  font-weight: 600;
-  color: #fff; }
-
-button {
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  color: #fff;
-  position: relative;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  padding: 1rem 3rem 1rem 3rem;
-  text-transform: uppercase;
-  font-family: "Lato";
-  font-size: 1.5em; }
-
-button a {
-  text-decoration: none; }
-
-@-moz-keyframes cloud-animation {
-  100% {
-    background-position: 0px 2em; } }
-@-webkit-keyframes cloud-animation {
-  100% {
-    background-position: 0px 2em; } }
-@-o-keyframes cloud-animation {
-  100% {
-    background-position: 0px 2em; } }
-@keyframes cloud-animation {
-  100% {
-    background-position: 0px 2em; } }
-@-moz-keyframes witch-word-color {
-  0% {
-    color: #d3b7f7; }
-  50% {
-    color: #50514f; }
-  100% {
-    color: #fff; } }
-@-webkit-keyframes witch-word-color {
-  0% {
-    color: #d3b7f7; }
-  50% {
-    color: #50514f; }
-  100% {
-    color: #fff; } }
-@-o-keyframes witch-word-color {
-  0% {
-    color: #d3b7f7; }
-  50% {
-    color: #50514f; }
-  100% {
-    color: #fff; } }
-@keyframes witch-word-color {
-  0% {
-    color: #d3b7f7; }
-  50% {
-    color: #50514f; }
-  100% {
-    color: #fff; } }
+.section_02 .text {
+  width: 260px;
+  height: auto;
+  position: relative; }
+  .section_02 .text h2 {
+    font-size: 3em;
+    font-weight: 500; }
+  .section_02 .text .learn {
+    margin-top: -10px;
+    margin-left: 210px;
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: 0.1em; }

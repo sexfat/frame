@@ -1,0 +1,100 @@
+//parallax_02
+//base
+@import "base/variables";
+@import "base/font";
+@import "base/mixin";
+@import "layout/grid";
+@import "base/reset";
+@import "layout/rwd";
+@import "animation/animate"; //animation
+.clearfix {
+      clear: both;
+}
+//view
+.all_width {
+      width: 100%;
+      height: 100vh;
+      padding-left: 2%;
+      padding-top: 50px;
+}
+//intro
+.section_01 {
+      .text {
+            margin-top: 50px;
+            width: 260px;
+            height: auto;
+            position: relative;
+            h2 {
+                  font-size: 3em;
+                  font-weight: 500;
+                  opacity: 0;
+            }
+            // &:before {
+            //       background: #000;
+            //       height: 2px;
+            //       width: 80px;
+            //       margin-top: 5px;
+            //       content: "";
+            //       position: absolute;
+            // }
+            // &:after {
+            //       background: #000;
+            //       height: 2px;
+            //       width: 80px;
+            //       content: "";
+            //       position: absolute;
+            //       left: auto;
+            //       right: 0;
+            //       margin-top: 10px;
+            //
+            // }
+            .learn {
+                  margin-top: -10px;
+                  margin-left: 210px;
+                  font-size: 0.6em;
+                  font-weight: 100;
+                  letter-spacing: 0.1em;
+                  opacity: 0;
+            }
+      }
+}
+.section_02 {
+      .text {
+            width: 260px;
+            height: auto;
+            position: relative;
+            h2 {
+                  font-size: 3em;
+                  font-weight: 500;
+            }
+            // &:before {
+            //       background: #000;
+            //       height: 2px;
+            //       width: 80px;
+            //       margin-top: 5px;
+            //       content: "";
+            //       position: absolute;
+            // }
+            // &:after {
+            //       background: #000;
+            //       height: 2px;
+            //       width: 80px;
+            //       content: "";
+            //       position: absolute;
+            //       left: auto;
+            //       right: 0;
+            //       margin-top: 10px;
+            //
+            // }
+            .learn {
+                  margin-top: -10px;
+                  margin-left: 210px;
+                  font-size: 0.6em;
+                  font-weight: 100;
+                  letter-spacing: 0.1em;
+            }
+      }
+}
+.section_03 {}
+.section_04 {}
+.section_05 {}

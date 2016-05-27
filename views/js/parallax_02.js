@@ -159,32 +159,42 @@ $(function() {
 
 
 
-      var tween = new TimelineMax({repeat:2, repeatDelay:1})
-      .to(".cid_01", 2, {top: "150",left: "150"
-            }
-      )
-      .to(".cid_01", 2, {top: "400",left: "200" ,ease: Quad.easeOut
-            }
-      )
-      .to(".cid_02", 1, {top: "100px",left: "100px"
-}``
-      )
-      .to(".cid_03", 1, {top: "100px",left: "100px"
-            }
-      )
+      var tween = new TimelineMax()
+            .to(".cid_01", 2, {
+                  top: "150",
+                  left: "150"
+            })
+            .to(".cid_01", 2, {
+                  top: "400",
+                  left: "200"
+            })
+            .staggerTo(".cid_02", 1, {
+                  top: "0",
+                  left: "0"
+            }, {
+                  top: "100",
+                  left: "100"
+            }, 0.5)
+            // .to(".cid_03", 1, {top: "100px",left: "100px"
+            //       }
+            // )
+
+      tween.add(TweenMax.to(".cid_03", 1, {
+            top: "100px",
+            rotation: 60
+      }))
 
       var scene5 = new ScrollMagic.Scene({
-            triggerElement: "#trigger5",
-            duration: 500,
-            offset: 150,
-            //only run once
-            reverse: false
-      })
+                  triggerElement: "#trigger5",
+                  duration: 500,
+                  offset: 150,
+                  //only run once
+                  reverse: true
+            })
             .setTween(tween)
             .addTo(controller);
 
 });
-
 
 
 
