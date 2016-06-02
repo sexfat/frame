@@ -8,12 +8,17 @@
       width: 100%;
       height: 80px;
       background-color: #fcdc05;
+
+
+
+
       .menu {
             width: 800px;
             margin: 0 auto;
-      };
+      }
       .width_all {
             width: 100px;
+            height: 47px;
             display: inline-block;
             text-align: center;
             padding-top: 30px;
@@ -26,15 +31,39 @@
             height: 400px;
             background-color: #71eef2;
             display: none;
+            position: relative;
       }
-      .submenu .on {
-            display: block;
+      .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+      }
+      @include keyframes(fadeIn) {0%{ opacity:0; } 100%{ opacity:1; }}
+      // @-webkit-keyframes fadeIn {
+      //       0% {
+      //             opacity: 0;
+      //       }
+      //       100% {
+      //             opacity: 1;
+      //       }
+      // }
+      // @keyframes fadeIn {
+      //       0% {
+      //             opacity: 0;
+      //       }
+      //       100% {
+      //             opacity: 1;
+      //       }
+      // }
+      .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
       }
 }
 .on {
-      // position: fixed;
-      // height: 100px;
-      display: block !important;
+ position: fixed;
+ height: 120px;
 }
 .wrapper {
       height: 3800px;
