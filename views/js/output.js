@@ -64,8 +64,8 @@ obj.f();
 //02
 var x = 10;
 var y = 30;
-var f = function(){
-	console.log(this.x);
+var f = function() {
+      console.log(this.x);
       console.log(this.y);
 };
 
