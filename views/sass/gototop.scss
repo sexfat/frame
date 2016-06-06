@@ -1,0 +1,31 @@
+//base
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "layout/grid";
+@import "layout/rwd"; // @import "modules/hamburger_menu";
+.wrapper {
+      background-color: #b1c2c1;
+      height: 1800px;
+      width: 100%;
+      position: relative;
+      overflow:auto;
+}
+.gototop {
+      top: 85%;
+      right: -10px;
+      width: 60px;
+      height: 60px;
+      position: fixed;
+      cursor: pointer;
+      background-color: rgba(#e6f77a, 0.98);
+      @include transition(all,0.3s);
+      opacity: 0 ;
+
+}
+.on {
+      top: 85%;
+      right: 20px;
+      opacity: 1;
+      @include transition(all,0.3s);
+}
