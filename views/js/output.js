@@ -72,7 +72,20 @@ var f = function() {
 f();
 
 //-----------------
-//  javascript hack
+//  javascript Immediate Function  立即函示
 //-----------------
+
+(function(){
+  var thisIsTemp = "abc";
+}());
+console.log('thisIsTemp');
+
+//vs
+
+var thisIsTemp = 'abc' ;
+
+function a() {
+console.log('abc');
+}
 
 },{}]},{},[1]);
