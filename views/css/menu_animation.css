@@ -287,6 +287,8 @@ body {
       margin-left: 15px;
       margin-right: 15px;
       cursor: pointer; }
+      .wrapper ul li .nav__link__current {
+        color: red; }
   .wrapper .a_01 {
     background-color: #c7ffbe; }
   .wrapper .a_02 {

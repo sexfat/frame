@@ -33,6 +33,9 @@ body {
                   display: inline-block;
                   @include margin-center(15px);
                   cursor: pointer;
+                  .nav__link__current {
+                     color: red;
+                  }
             }
       }
       .a_01 {
