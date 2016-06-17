@@ -1,13 +1,18 @@
 // ----------------------------------------------------------------------
 // grid
 // ----------------------------------------------------------------------
+
+
 // commom
 // .col_1 { width: 8.33333%;  }
 // .col_12 { width: 100%; }
+//tablet
+//m_col_1  { width: 8.33333%;  }
 //moblie
 //s_col_1  { width: 8.33333%;  }
-//medium
-//m_col_1  { width: 8.33333%;  }
+
+
+
 @import "../layout/rwd";
 *,
 *:after,
@@ -19,6 +24,9 @@
       @include clearfix();
       margin: 0 auto;
 }
+
+
+
 //commom grid
 .col {
       margin-left: 1.6%;

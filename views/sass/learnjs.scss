@@ -3,4 +3,63 @@
 @import "base/mixin";
 @import "layout/grid";
 @import "layout/rwd";
-@import "vendor/skel";
+@import "vendor/skel"; // 第一個置中範例
+.ectage {
+      height: 700px;
+      width: 800px;
+      background-color: #f63232;
+      .innersection {
+            background-color: #e2e2e2;
+            height: auto;
+            width: 300px;
+            @include margin-auto();
+            .text_area {
+                  line-height: 1.2;
+                  // float: left;
+            }
+      }
+}
+// 第二個範例
+.rect {
+      margin-top: 50px;
+      width: 100%;
+      height: auto;
+      background-color: #e7a806;
+      .left {
+            width: 50%;
+            float: left;
+            // background-color: #c8db87;
+            .box {
+                  background-color: #84e342;
+                  width: 25%;
+                  @include margin-auto();
+            }
+      }
+      .right {
+            width: 50%;
+            float: right;
+            height: 850px;
+            background-color: #96b336;
+      }
+      .clearfix {
+            clear: both;
+      }
+}
+//視窗滾動觸發事件
+
+.section_03 {
+ height: 1090px;
+
+
+
+}
+
+.section {
+      margin-top: 50px;
+      .go {
+background-color: #b4a8fc;
+width: 250px;
+height: 450px;
+@include margin-auto();
+      }
+}

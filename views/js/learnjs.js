@@ -74,15 +74,64 @@ f();
 //  javascript Immediate Function  立即函示
 //-----------------
 
-(function(){
-  var thisIsTemp = "abc";
+(function() {
+      var thisIsTemp = "abc";
 }());
 console.log('thisIsTemp');
 
 //vs
 
-var thisIsTemp = 'abc' ;
+var thisIsTemp = 'abc';
 
 function a() {
-console.log('abc');
+      console.log('abc');
 }
+
+//找到 高度 要做垂直跟橫向都置中
+
+
+// (function(){
+//     console.log("test");
+// })();
+
+$(document).ready(function() {
+      var outHeight = $('.ectage').height();
+      var innnerHeight = $('.innersection').height();
+      console.log('innersection:', innnerHeight + 'px');
+      var result = (outHeight - innnerHeight) / 2;
+      $('.ectage').css('padding-top', result);
+
+});
+
+
+(function() {
+      var outHeights = $('.rect').height();
+      var innnerHeights = $('.left').height();
+      console.log('innersections:', innnerHeights + 'px');
+      var results = (outHeights - innnerHeights) / 2;
+      $('.left').css('padding-top', results);
+})();
+
+
+
+
+
+
+$(document).ready(function() {
+      var lastScrollTop = 0;
+      $(window).scroll(function() {
+            var distance = $('.archor').scrollTop();
+
+            if (distance > lastScrollTop) {
+                  $('.go').addClass('archon');
+            } else {
+                  $('.go').removeClass('archon');
+            }
+            lastScrollTop = distance;
+            console.log('archer', 'ok');
+      });
+
+
+
+
+});
