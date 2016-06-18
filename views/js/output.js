@@ -105,12 +105,36 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+(function() {
       var outHeights = $('.rect').height();
       var innnerHeights = $('.left').height();
       console.log('innersections:', innnerHeights + 'px');
       var results = (outHeights - innnerHeights) / 2;
       $('.left').css('padding-top', results);
+})();
+
+
+
+
+
+
+$(document).ready(function() {
+      var lastScrollTop = 0;
+      $(window).scroll(function() {
+            var distance = $('.archor').scrollTop();
+
+            if (distance > lastScrollTop) {
+                  $('.go').addClass('archon');
+            } else {
+                  $('.go').removeClass('archon');
+            }
+            lastScrollTop = distance;
+            console.log('archer', 'ok');
+      });
+
+
+
+
 });
 
 },{}]},{},[1]);
