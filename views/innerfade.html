@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>innnerfade</title>
+  <link rel="stylesheet" type="text/css" href="../css/layout.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../css/animation.css"> -->
+  <!-- <script src="../js/modernizr-custom.js"></script> -->
+  <script type="text/javascript" src="../libs/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../libs/innerfade/jquery.innerfade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(
+      function() {
+        $('.inner').innerfade({
+          animationtype: 'fade',
+          speed: 750,
+          timeout: 2000,
+          type: 'random',
+          containerheight: '250px'
+        });
+      }
+    );
+  </script>
+
+
+</head>
+
+<body>
+
+
+  <div class="fadein">
+
+    <ul class="inner">
+      <li><img srcset="" src="https://placem.at/places?h=400&w=500" alt="">
+      </li>
+      <li><img srcset="" src="https://placem.at/people?h=400&w=500" alt="">
+      </li>
+      <li><img srcset="" src="https://placem.at/things?h=400&w=500" alt="">
+      </li>
+      <li><img srcset="" src="https://placem.at/people?h=400&w=500" alt="">
+      </li>
+      <li><img srcset="" src="https://placem.at/places?h=400&w=500" alt="">
+      </li>
+    </ul>
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
