@@ -4,54 +4,50 @@
 @import "layout/grid";
 @import "layout/rwd";
 @import "vendor/skel";
-
 .wrapper {
-  .floating_icon {
-    border-radius: 50px;
-    margin: 100px;
-    width: 200px;
-    height: 100px;
-    background: #f5f5f5;
-    // @include box-shadow(2px, 1px, 0px, 0px, #d5d5d5);
-    text-indent: -9999px;
-    cursor: pointer;
-  }
-  .floating_icon:hover {
-    background: #0cc1da;
-    @include single-transition( all, .35s, ease-in-out, 0s );
-    // -webkit-transition: all 0.35s;
-    // -moz-transition: all 0.35s;
-    // transition: all 0.35s;
-    @include scale(1.2);
-  }
+      .floating_icon {
+            border-radius: 50px;
+            margin: 100px;
+            width: 200px;
+            height: 100px;
+            background: #f5f5f5;
+            // @include box-shadow(2px, 1px, 0px, 0px, #d5d5d5);
+            text-indent: -9999px;
+            cursor: pointer;
+      }
+      .floating_icon:hover {
+            background: #0cc1da;
+            @include single-transition( all, .35s, ease-in-out, 0s );
+            // -webkit-transition: all 0.35s;
+            // -moz-transition: all 0.35s;
+            // transition: all 0.35s;
+            @include scale(1.2);
+      }
 }
-
 .test {
-
-@include vendor('transform', 'scale(1)');
-@include vendor('transition', 'none !important');
-@include vendor('transition', 'all 0.35s');
-
-
-
+      @include vendor( 'transform', 'scale(1)');
+      @include vendor( 'transition', 'none !important');
+      @include vendor( 'transition', 'all 0.35s');
 }
 // $image-path: 'img' !default;
 // $fallback-extension: 'png' !default;
 // $retina-suffix: '@2x';
-
 $public_path: 'img/';
-
 //src="img/free_table.jpg"
-
 .svg {
-
-@include vector-bg-with-fallback('free_table');
-
-
+      @include vector-bg-with-fallback( 'free_table');
 }
+.retina {
+      @include margin-auto();
+      width: 265px;
+      height: 50px;
+}
+.retinas {
 
-
-
+      width: 265px;
+      height: 50px;
+      @include retina("img/logo@2x.jpg", 265, 50);
+}
 // .test {
 //
 //     height: 200px;
