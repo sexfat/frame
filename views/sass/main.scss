@@ -43,10 +43,10 @@ $public_path: 'img/';
       height: 50px;
 }
 .retinas {
-
       width: 265px;
       height: 50px;
-      @include retina("img/logo@2x.jpg", 265, 50);
+      background: url('../img/logo.jpg');
+      @include retina("../img/logo@2x.jpg", 265, 50);
 }
 // .test {
 //
