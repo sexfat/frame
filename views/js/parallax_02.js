@@ -60,7 +60,7 @@ $(function() {
       var frame = new TimelineMax({
             pause: true
       });
-      frame.add("start") // add timeline label
+      // frame.add("start") // add timeline label
 
 
       // tween1
@@ -70,7 +70,7 @@ $(function() {
             x: 100,
             opacity: 1,
             ease: Quad.easeOut,
-      }, "start");
+      });
 
 
       // create a scene
@@ -93,7 +93,7 @@ $(function() {
             y: 0,
       }, {
             opacity: 1,
-            y: '80px',
+            y: '20px',
             ease: Power2.EaseInOut
       }, "start");
 
@@ -113,7 +113,7 @@ $(function() {
                   // duration: 150,
                   offset: 250,
                   //only run once
-                  reverse: true
+                  reverse: false
             })
             // 設定變數
             .setTween(tween2)

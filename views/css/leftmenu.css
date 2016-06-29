@@ -303,7 +303,7 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   .wrapper.on {
-    left: 280px;
+    left: 180px;
     border-radius: 8px 0 0 0;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;

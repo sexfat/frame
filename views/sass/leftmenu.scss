@@ -31,7 +31,7 @@ body {
       @include box-shadow( -2px , 0 , 18px ,#838383);
       @include transition(all,0.3s);
       &.on {
-            left: 280px;
+            left: 180px;
             @include roundedTopLeft(8);
             @include transition(all,0.3s);
       }
