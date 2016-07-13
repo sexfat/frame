@@ -238,10 +238,10 @@
   .s_col_12 {
     margin-left: 0; } }
 .wrapper .floating_icon {
-  border-radius: 50px;
+  border-radius: 100px;
   margin: 100px;
   width: 200px;
-  height: 100px;
+  height: 200px;
   background: #f5f5f5;
   text-indent: -9999px;
   cursor: pointer; }
