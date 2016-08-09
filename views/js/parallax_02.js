@@ -28,7 +28,6 @@ $(function() {
       TweenMax.fromTo(".leftimg", 1, {
             x: 0,
             opacity: 0,
-
       }, {
             x: 50,
             opacity: 1,

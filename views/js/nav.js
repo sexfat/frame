@@ -6,8 +6,6 @@ $("a#toggle").on('click', function(e) {
 });
 
 
-
-
 $(window).on('scroll', function() {
 
       var navHeight = $(window).height() - 100;
